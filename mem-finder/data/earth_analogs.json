@@ -1,0 +1,522 @@
+[
+  {
+    "id": "hingol",
+    "world": "earth",
+    "name": "Hingol, Pakistan",
+    "region": "Balochistan Makran Coast, Pakistan",
+    "lat": 25.5,
+    "lon": 65.5,
+    "expectedTwinId": "acidalia-planitia",
+    "expectedTwinWorld": "mars",
+    "gravity_g": 1.0,
+    "aridity_index": 0.08,
+    "volcanic_flag": false,
+    "summary": "Active sedimentary mud volcanoes (Chandragup) and wind-carved badlands mirroring Acidalia Planitia's pitted cones.",
+    "terrain": {
+      "rock_soil_type": { "value": "mudstone badlands", "unit": "class", "source": "USGS / OneGeology", "dataset": "Makran Mudstone Lithology", "resolution": "250 m", "mode": "pre-processed" },
+      "slope_deg": { "value": 9.4, "unit": "deg", "source": "Copernicus DEM / SRTM via Earthdata", "dataset": "Copernicus DEM GLO-30", "resolution": "30 m", "mode": "pre-processed" },
+      "roughness_index": { "value": 0.58, "unit": "0-1", "source": "SRTM via Earthdata", "dataset": "SRTM Terrain Ruggedness Index", "resolution": "30 m", "mode": "pre-processed" },
+      "rock_abundance_pct": { "value": 14.0, "unit": "%", "source": "Copernicus Sentinel-2", "dataset": "Sentinel-2 Exposed Clastic Index", "resolution": "10 m", "mode": "pre-processed" },
+      "crater_boulder_density": { "value": null, "unit": "boulders/km²", "source": "TODO real value", "dataset": "TODO real value (field boulder count)", "resolution": "N/A", "mode": "pre-processed" },
+      "elevation_m": { "value": 165, "unit": "m", "source": "SRTM / Copernicus DEM via Earthdata", "dataset": "Copernicus DEM GLO-30", "resolution": "30 m", "mode": "pre-processed" },
+      "landforms": { "value": ["mud volcanoes", "wind-carved badlands", "canyons"], "unit": "tags", "source": "USGS / Copernicus", "dataset": "Geomorphology Feature Tags", "resolution": "30 m", "mode": "pre-processed" }
+    },
+    "climate": {
+      "temp_day_c": { "value": 33.4, "unit": "°C", "source": "NASA POWER", "dataset": "NASA POWER T2M_MAX", "resolution": "55 km", "mode": "live" },
+      "temp_night_c": { "value": 19.6, "unit": "°C", "source": "NASA POWER", "dataset": "NASA POWER T2M_MIN", "resolution": "55 km", "mode": "live" },
+      "temp_swing_c": { "value": 13.8, "unit": "°C", "source": "NASA POWER", "dataset": "Computed T2M_MAX - T2M_MIN", "resolution": "55 km", "mode": "live" },
+      "air_pressure_kpa": { "value": 99.4, "unit": "kPa", "source": "NASA POWER", "dataset": "NASA POWER Surface Pressure (PS)", "resolution": "55 km", "mode": "live" },
+      "humidity_pct": { "value": 46.0, "unit": "%", "source": "NASA POWER", "dataset": "NASA POWER RH2M", "resolution": "55 km", "mode": "live" },
+      "wind_speed_ms": { "value": 4.8, "unit": "m/s", "source": "NASA POWER", "dataset": "NASA POWER WS2M", "resolution": "55 km", "mode": "live" },
+      "dust_activity_level": { "value": "high", "unit": "tier", "source": "MODIS via Worldview", "dataset": "MODIS Aerosol Dust Index", "resolution": "1 km", "mode": "pre-processed" },
+      "radiation_proxy": { "value": 0.42, "unit": "0-1", "source": "Calculated (altitude from SRTM)", "dataset": "Elevation UV Thinning Proxy", "resolution": "30 m", "mode": "pre-processed" }
+    },
+    "resources": {
+      "water_ice_presence": { "value": "trace", "unit": "tier", "source": "USGS / WorldClim", "dataset": "Makran Mud Brine & Aridity", "resolution": "1 km", "mode": "pre-processed" },
+      "minerals_for_building_fuel": { "value": ["phyllosilicate clay", "silt", "methane brine"], "unit": "tags", "source": "USGS / Sentinel-2", "dataset": "USGS Mineral Inventory", "resolution": "10 m", "mode": "pre-processed" },
+      "sunlight_hours_per_day": { "value": 8.6, "unit": "hrs/day", "source": "NASA POWER", "dataset": "NASA POWER ALLSKY_SFC_SW_DWN", "resolution": "55 km", "mode": "live" }
+    },
+    "operations": {
+      "distance_to_help_km": { "value": 145, "unit": "km", "source": "Calculated (to Karachi / Ormara)", "dataset": "Haversine Distance to Hub", "resolution": "Point", "mode": "pre-processed" },
+      "comm_delay_s": { "value": 0, "unit": "s", "source": "Terrestrial Baseline", "dataset": "Local Line-of-Sight / Sat", "resolution": "Scalar", "mode": "pre-processed" },
+      "terrain_visibility": { "value": 0.92, "unit": "0-1", "source": "Copernicus Sentinel-1/2 + CSA RCM", "dataset": "Cloud-Free Optical & SAR Coverage", "resolution": "10 m", "mode": "pre-processed" },
+      "hazard_score": { "value": 0.44, "unit": "0-1", "source": "USGS / Makran Seismic Belt", "dataset": "Flash-Flood & Mud Diapir Hazard", "resolution": "Regional", "mode": "pre-processed" }
+    },
+    "data_quality": {
+      "dataset_resolution_m": { "value": 30, "unit": "m", "source": "Copernicus / SRTM / Sentinel", "dataset": "Primary DEM Resolution", "resolution": "30 m", "mode": "pre-processed" },
+      "coverage": { "value": 0.96, "unit": "0-1", "source": "ESA Copernicus / NASA POWER", "dataset": "Spatial Data Coverage", "resolution": "Regional", "mode": "pre-processed" }
+    },
+    "radarView": {
+      "available": true,
+      "imageKey": "arid-ridges",
+      "instrument": "Copernicus Sentinel-1 C-SAR / CSA RCM",
+      "source": "Copernicus Data Space / CSA Open Data",
+      "caption": "C-band SAR resolves wind-carved badland canyons and mud-volcano cone flanks across Hingol National Park."
+    }
+  },
+  {
+    "id": "kharan-desert",
+    "world": "earth",
+    "name": "Kharan Desert, Pakistan",
+    "region": "Balochistan Basin, Pakistan",
+    "lat": 28.4,
+    "lon": 65.0,
+    "expectedTwinId": "gale-crater",
+    "expectedTwinWorld": "mars",
+    "gravity_g": 1.0,
+    "aridity_index": 0.04,
+    "volcanic_flag": false,
+    "summary": "Dry, dusty, barren rocky gravel flats and sand sheets closely reproducing Gale Crater's ventifact plains.",
+    "terrain": {
+      "rock_soil_type": { "value": "iron-rich dust", "unit": "class", "source": "USGS / OneGeology", "dataset": "Kharan Regolith & Desert Pavement", "resolution": "250 m", "mode": "pre-processed" },
+      "slope_deg": { "value": 4.8, "unit": "deg", "source": "SRTM / Copernicus DEM via Earthdata", "dataset": "SRTM 1-Arc-Second Slope", "resolution": "30 m", "mode": "pre-processed" },
+      "roughness_index": { "value": 0.60, "unit": "0-1", "source": "SRTM via Earthdata", "dataset": "SRTM Terrain Ruggedness Index", "resolution": "30 m", "mode": "pre-processed" },
+      "rock_abundance_pct": { "value": 19.2, "unit": "%", "source": "Copernicus Sentinel-2", "dataset": "Hamun Gravel Cover Fraction", "resolution": "10 m", "mode": "pre-processed" },
+      "crater_boulder_density": { "value": null, "unit": "boulders/km²", "source": "TODO real value", "dataset": "TODO real value (field boulder count)", "resolution": "N/A", "mode": "pre-processed" },
+      "elevation_m": { "value": 640, "unit": "m", "source": "SRTM / Copernicus DEM via Earthdata", "dataset": "Copernicus DEM GLO-30", "resolution": "30 m", "mode": "pre-processed" },
+      "landforms": { "value": ["gravel flats", "rocky basin", "sand sheets", "dunes"], "unit": "tags", "source": "USGS / Copernicus", "dataset": "Geomorphology Feature Tags", "resolution": "30 m", "mode": "pre-processed" }
+    },
+    "climate": {
+      "temp_day_c": { "value": 34.2, "unit": "°C", "source": "NASA POWER", "dataset": "NASA POWER T2M_MAX", "resolution": "55 km", "mode": "live" },
+      "temp_night_c": { "value": 14.5, "unit": "°C", "source": "NASA POWER", "dataset": "NASA POWER T2M_MIN", "resolution": "55 km", "mode": "live" },
+      "temp_swing_c": { "value": 19.7, "unit": "°C", "source": "NASA POWER", "dataset": "Computed T2M_MAX - T2M_MIN", "resolution": "55 km", "mode": "live" },
+      "air_pressure_kpa": { "value": 93.8, "unit": "kPa", "source": "NASA POWER", "dataset": "NASA POWER Surface Pressure (PS)", "resolution": "55 km", "mode": "live" },
+      "humidity_pct": { "value": 24.0, "unit": "%", "source": "NASA POWER", "dataset": "NASA POWER RH2M", "resolution": "55 km", "mode": "live" },
+      "wind_speed_ms": { "value": 5.4, "unit": "m/s", "source": "NASA POWER", "dataset": "NASA POWER WS2M", "resolution": "55 km", "mode": "live" },
+      "dust_activity_level": { "value": "high", "unit": "tier", "source": "MODIS via Worldview", "dataset": "MODIS Dust Storm Frequency", "resolution": "1 km", "mode": "pre-processed" },
+      "radiation_proxy": { "value": 0.50, "unit": "0-1", "source": "Calculated (altitude from SRTM)", "dataset": "Elevation UV Thinning Proxy", "resolution": "30 m", "mode": "pre-processed" }
+    },
+    "resources": {
+      "water_ice_presence": { "value": "trace", "unit": "tier", "source": "USGS / WorldClim", "dataset": "Seasonal Hamun Brine", "resolution": "1 km", "mode": "pre-processed" },
+      "minerals_for_building_fuel": { "value": ["iron oxide", "basalt sand", "clay", "gypsum"], "unit": "tags", "source": "USGS / Sentinel-2", "dataset": "Sentinel-2 Iron-Oxide Index", "resolution": "10 m", "mode": "pre-processed" },
+      "sunlight_hours_per_day": { "value": 9.1, "unit": "hrs/day", "source": "NASA POWER", "dataset": "NASA POWER ALLSKY_SFC_SW_DWN", "resolution": "55 km", "mode": "live" }
+    },
+    "operations": {
+      "distance_to_help_km": { "value": 160, "unit": "km", "source": "Calculated (to Quetta / Dalbandin)", "dataset": "Haversine Distance to Hub", "resolution": "Point", "mode": "pre-processed" },
+      "comm_delay_s": { "value": 0, "unit": "s", "source": "Terrestrial Baseline", "dataset": "Local Line-of-Sight / Sat", "resolution": "Scalar", "mode": "pre-processed" },
+      "terrain_visibility": { "value": 0.94, "unit": "0-1", "source": "Copernicus Sentinel-1/2", "dataset": "Arid Basin Optical Coverage", "resolution": "10 m", "mode": "pre-processed" },
+      "hazard_score": { "value": 0.40, "unit": "0-1", "source": "USGS", "dataset": "Heat & Dust Storm Hazard", "resolution": "Regional", "mode": "pre-processed" }
+    },
+    "data_quality": {
+      "dataset_resolution_m": { "value": 30, "unit": "m", "source": "SRTM / Copernicus / POWER", "dataset": "Primary DEM Resolution", "resolution": "30 m", "mode": "pre-processed" },
+      "coverage": { "value": 0.96, "unit": "0-1", "source": "NASA / ESA", "dataset": "Spatial Data Coverage", "resolution": "Regional", "mode": "pre-processed" }
+    },
+    "radarView": { "available": false }
+  },
+  {
+    "id": "dasht-e-lut",
+    "world": "earth",
+    "name": "Dasht-e Lut, Iran",
+    "region": "Kerman & Sistan-Baluchestan, Iran",
+    "lat": 30.5,
+    "lon": 59.0,
+    "expectedTwinId": "medusae-fossae",
+    "expectedTwinWorld": "mars",
+    "gravity_g": 1.0,
+    "aridity_index": 0.01,
+    "volcanic_flag": false,
+    "summary": "Hottest land surface measured by NASA MODIS, sculpted into parallel wind-carved kalut yardangs akin to Medusae Fossae.",
+    "terrain": {
+      "rock_soil_type": { "value": "volcanic ash", "unit": "class", "source": "USGS / Sentinel-2", "dataset": "Kalut Ignimbrite-Silt Ridges", "resolution": "10 m", "mode": "pre-processed" },
+      "slope_deg": { "value": 8.2, "unit": "deg", "source": "Copernicus DEM / SRTM via Earthdata", "dataset": "Copernicus DEM GLO-30", "resolution": "30 m", "mode": "pre-processed" },
+      "roughness_index": { "value": 0.68, "unit": "0-1", "source": "SRTM via Earthdata", "dataset": "Kalut Yardang Ruggedness", "resolution": "30 m", "mode": "pre-processed" },
+      "rock_abundance_pct": { "value": 7.5, "unit": "%", "source": "Copernicus Sentinel-2", "dataset": "Aeolian Silt vs Gravel Fraction", "resolution": "10 m", "mode": "pre-processed" },
+      "crater_boulder_density": { "value": null, "unit": "boulders/km²", "source": "TODO real value", "dataset": "TODO real value (field boulder count)", "resolution": "N/A", "mode": "pre-processed" },
+      "elevation_m": { "value": 310, "unit": "m", "source": "SRTM / Copernicus DEM via Earthdata", "dataset": "Copernicus DEM GLO-30", "resolution": "30 m", "mode": "pre-processed" },
+      "landforms": { "value": ["yardangs", "wind-carved formations", "dunes"], "unit": "tags", "source": "USGS / Copernicus", "dataset": "Kalut Yardang Catalog", "resolution": "30 m", "mode": "pre-processed" }
+    },
+    "climate": {
+      "temp_day_c": { "value": 38.8, "unit": "°C", "source": "NASA POWER", "dataset": "NASA POWER T2M_MAX (MODIS LST 70.7°C)", "resolution": "55 km", "mode": "live" },
+      "temp_night_c": { "value": 16.4, "unit": "°C", "source": "NASA POWER", "dataset": "NASA POWER T2M_MIN", "resolution": "55 km", "mode": "live" },
+      "temp_swing_c": { "value": 22.4, "unit": "°C", "source": "NASA POWER", "dataset": "Computed T2M_MAX - T2M_MIN", "resolution": "55 km", "mode": "live" },
+      "air_pressure_kpa": { "value": 97.6, "unit": "kPa", "source": "NASA POWER", "dataset": "NASA POWER Surface Pressure (PS)", "resolution": "55 km", "mode": "live" },
+      "humidity_pct": { "value": 16.0, "unit": "%", "source": "NASA POWER", "dataset": "NASA POWER RH2M", "resolution": "55 km", "mode": "live" },
+      "wind_speed_ms": { "value": 6.6, "unit": "m/s", "source": "NASA POWER", "dataset": "NASA POWER WS2M (120-Day Winds)", "resolution": "55 km", "mode": "live" },
+      "dust_activity_level": { "value": "high", "unit": "tier", "source": "MODIS via Worldview", "dataset": "MODIS Extreme Dust Plume Index", "resolution": "1 km", "mode": "pre-processed" },
+      "radiation_proxy": { "value": 0.56, "unit": "0-1", "source": "Calculated (altitude from SRTM)", "dataset": "Elevation + Extreme Albedo Heating", "resolution": "30 m", "mode": "pre-processed" }
+    },
+    "resources": {
+      "water_ice_presence": { "value": "none", "unit": "tier", "source": "USGS / WorldClim", "dataset": "Hyper-Arid Core", "resolution": "1 km", "mode": "pre-processed" },
+      "minerals_for_building_fuel": { "value": ["silica dust", "gypsum", "halite"], "unit": "tags", "source": "USGS / Sentinel-2", "dataset": "Mineralogy Archive", "resolution": "10 m", "mode": "pre-processed" },
+      "sunlight_hours_per_day": { "value": 9.6, "unit": "hrs/day", "source": "NASA POWER", "dataset": "NASA POWER ALLSKY_SFC_SW_DWN", "resolution": "55 km", "mode": "live" }
+    },
+    "operations": {
+      "distance_to_help_km": { "value": 195, "unit": "km", "source": "Calculated (to Kerman / Bam)", "dataset": "Haversine Distance to Hub", "resolution": "Point", "mode": "pre-processed" },
+      "comm_delay_s": { "value": 0, "unit": "s", "source": "Terrestrial Baseline", "dataset": "Local Line-of-Sight / Sat", "resolution": "Scalar", "mode": "pre-processed" },
+      "terrain_visibility": { "value": 0.88, "unit": "0-1", "source": "Copernicus Sentinel-1/2", "dataset": "Optical & Dust-Haze Visibility", "resolution": "10 m", "mode": "pre-processed" },
+      "hazard_score": { "value": 0.72, "unit": "0-1", "source": "MODIS LST / USGS", "dataset": "Extreme Heat & Sand Sink Hazard", "resolution": "1 km", "mode": "pre-processed" }
+    },
+    "data_quality": {
+      "dataset_resolution_m": { "value": 30, "unit": "m", "source": "Copernicus / MODIS / POWER", "dataset": "Primary DEM Resolution", "resolution": "30 m", "mode": "pre-processed" },
+      "coverage": { "value": 0.90, "unit": "0-1", "source": "ESA / NASA", "dataset": "Spatial Data Coverage", "resolution": "Regional", "mode": "pre-processed" }
+    },
+    "radarView": { "available": false }
+  },
+  {
+    "id": "qaidam-basin",
+    "world": "earth",
+    "name": "Dalangtan / Qaidam Basin, China",
+    "region": "Tibetan Plateau, China",
+    "lat": 37.7,
+    "lon": 91.4,
+    "expectedTwinId": "meridiani-planum",
+    "expectedTwinWorld": "mars",
+    "gravity_g": 1.0,
+    "aridity_index": 0.03,
+    "volcanic_flag": false,
+    "summary": "2.7 km high-altitude hyper-arid evaporite basin rich in Mg-sulfates and wind-carved ridges — Earth's premier Meridiani twin.",
+    "terrain": {
+      "rock_soil_type": { "value": "evaporite salt", "unit": "class", "source": "USGS / Sentinel-2", "dataset": "Dalangtan Mg-Sulfate Playa Map", "resolution": "10 m", "mode": "pre-processed" },
+      "slope_deg": { "value": 2.9, "unit": "deg", "source": "Copernicus DEM / SRTM via Earthdata", "dataset": "Copernicus DEM GLO-30", "resolution": "30 m", "mode": "pre-processed" },
+      "roughness_index": { "value": 0.34, "unit": "0-1", "source": "SRTM via Earthdata", "dataset": "SRTM Playa Roughness", "resolution": "30 m", "mode": "pre-processed" },
+      "rock_abundance_pct": { "value": 8.5, "unit": "%", "source": "Copernicus Sentinel-2", "dataset": "Exposed Evaporite Crust", "resolution": "10 m", "mode": "pre-processed" },
+      "crater_boulder_density": { "value": null, "unit": "boulders/km²", "source": "TODO real value", "dataset": "TODO real value (field boulder count)", "resolution": "N/A", "mode": "pre-processed" },
+      "elevation_m": { "value": 2740, "unit": "m", "source": "SRTM / Copernicus DEM via Earthdata", "dataset": "Copernicus DEM GLO-30", "resolution": "30 m", "mode": "pre-processed" },
+      "landforms": { "value": ["salt basin", "wind-carved ridges", "dunes"], "unit": "tags", "source": "USGS / Copernicus", "dataset": "Dalangtan Yardang & Playa Map", "resolution": "30 m", "mode": "pre-processed" }
+    },
+    "climate": {
+      "temp_day_c": { "value": 12.6, "unit": "°C", "source": "NASA POWER", "dataset": "NASA POWER T2M_MAX", "resolution": "55 km", "mode": "live" },
+      "temp_night_c": { "value": -5.4, "unit": "°C", "source": "NASA POWER", "dataset": "NASA POWER T2M_MIN", "resolution": "55 km", "mode": "live" },
+      "temp_swing_c": { "value": 18.0, "unit": "°C", "source": "NASA POWER", "dataset": "Computed T2M_MAX - T2M_MIN", "resolution": "55 km", "mode": "live" },
+      "air_pressure_kpa": { "value": 72.4, "unit": "kPa", "source": "NASA POWER", "dataset": "NASA POWER Surface Pressure (PS)", "resolution": "55 km", "mode": "live" },
+      "humidity_pct": { "value": 22.0, "unit": "%", "source": "NASA POWER", "dataset": "NASA POWER RH2M", "resolution": "55 km", "mode": "live" },
+      "wind_speed_ms": { "value": 5.6, "unit": "m/s", "source": "NASA POWER", "dataset": "NASA POWER WS2M", "resolution": "55 km", "mode": "live" },
+      "dust_activity_level": { "value": "medium", "unit": "tier", "source": "MODIS via Worldview", "dataset": "MODIS Aerosol Dust Index", "resolution": "1 km", "mode": "pre-processed" },
+      "radiation_proxy": { "value": 0.80, "unit": "0-1", "source": "Calculated (altitude from SRTM)", "dataset": "2.74 km High-Altitude UV Proxy", "resolution": "30 m", "mode": "pre-processed" }
+    },
+    "resources": {
+      "water_ice_presence": { "value": "trace", "unit": "tier", "source": "USGS / Sentinel-2", "dataset": "Hydrated Salt Brine Pockets", "resolution": "10 m", "mode": "pre-processed" },
+      "minerals_for_building_fuel": { "value": ["evaporite salt", "magnesium sulfate", "gypsum", "halite"], "unit": "tags", "source": "USGS / Sentinel-2", "dataset": "Qaidam Evaporite Inventory", "resolution": "10 m", "mode": "pre-processed" },
+      "sunlight_hours_per_day": { "value": 8.9, "unit": "hrs/day", "source": "NASA POWER", "dataset": "NASA POWER ALLSKY_SFC_SW_DWN", "resolution": "55 km", "mode": "live" }
+    },
+    "operations": {
+      "distance_to_help_km": { "value": 180, "unit": "km", "source": "Calculated (to Mangnai / Golmud)", "dataset": "Haversine Distance to Hub", "resolution": "Point", "mode": "pre-processed" },
+      "comm_delay_s": { "value": 0, "unit": "s", "source": "Terrestrial Baseline", "dataset": "Local Line-of-Sight / Sat", "resolution": "Scalar", "mode": "pre-processed" },
+      "terrain_visibility": { "value": 0.96, "unit": "0-1", "source": "CSA RADARSAT-1 + Sentinel-2", "dataset": "Clear High-Altitude Recon", "resolution": "10 m", "mode": "pre-processed" },
+      "hazard_score": { "value": 0.34, "unit": "0-1", "source": "USGS / Copernicus", "dataset": "Altitude & Salt Crust Hazard", "resolution": "30 m", "mode": "pre-processed" }
+    },
+    "data_quality": {
+      "dataset_resolution_m": { "value": 30, "unit": "m", "source": "Copernicus / RADARSAT-1 / POWER", "dataset": "Primary DEM Resolution", "resolution": "30 m", "mode": "pre-processed" },
+      "coverage": { "value": 0.95, "unit": "0-1", "source": "ESA / CSA / NASA", "dataset": "Spatial Data Coverage", "resolution": "Regional", "mode": "pre-processed" }
+    },
+    "radarView": {
+      "available": true,
+      "imageKey": "arid-ridges",
+      "instrument": "CSA RADARSAT-1 C-SAR / Copernicus Sentinel-1",
+      "source": "CSA Open Data / Copernicus",
+      "caption": "C-band SAR separates smooth Dalangtan magnesium-sulfate salt pans (dark) from wind-carved ridges (bright)."
+    }
+  },
+  {
+    "id": "samail-ophiolite",
+    "world": "earth",
+    "name": "Samail Ophiolite, Oman",
+    "region": "Al Hajar Mountains, Oman",
+    "lat": 23.0,
+    "lon": 58.3,
+    "expectedTwinId": "nili-fossae",
+    "expectedTwinWorld": "mars",
+    "gravity_g": 1.0,
+    "aridity_index": 0.06,
+    "volcanic_flag": false,
+    "summary": "Largest exposed oceanic mantle peridotite — olivine, serpentine, and carbonate veins mirroring Nili Fossae & Jezero.",
+    "terrain": {
+      "rock_soil_type": { "value": "ultramafic", "unit": "class", "source": "USGS / OneGeology", "dataset": "Samail Peridotite-Carbonate Map", "resolution": "100 m", "mode": "pre-processed" },
+      "slope_deg": { "value": 12.1, "unit": "deg", "source": "Copernicus DEM / SRTM via Earthdata", "dataset": "Copernicus DEM GLO-30", "resolution": "30 m", "mode": "pre-processed" },
+      "roughness_index": { "value": 0.64, "unit": "0-1", "source": "SRTM via Earthdata", "dataset": "SRTM Terrain Ruggedness Index", "resolution": "30 m", "mode": "pre-processed" },
+      "rock_abundance_pct": { "value": 24.0, "unit": "%", "source": "Copernicus Sentinel-2", "dataset": "Exposed Mantle Outcrop %", "resolution": "10 m", "mode": "pre-processed" },
+      "crater_boulder_density": { "value": null, "unit": "boulders/km²", "source": "TODO real value", "dataset": "TODO real value (field boulder count)", "resolution": "N/A", "mode": "pre-processed" },
+      "elevation_m": { "value": 920, "unit": "m", "source": "SRTM / Copernicus DEM via Earthdata", "dataset": "Copernicus DEM GLO-30", "resolution": "30 m", "mode": "pre-processed" },
+      "landforms": { "value": ["canyons", "fractured bedrock", "graben valleys"], "unit": "tags", "source": "USGS / Copernicus", "dataset": "Wadi Tayin Structural Map", "resolution": "30 m", "mode": "pre-processed" }
+    },
+    "climate": {
+      "temp_day_c": { "value": 34.0, "unit": "°C", "source": "NASA POWER", "dataset": "NASA POWER T2M_MAX", "resolution": "55 km", "mode": "live" },
+      "temp_night_c": { "value": 21.8, "unit": "°C", "source": "NASA POWER", "dataset": "NASA POWER T2M_MIN", "resolution": "55 km", "mode": "live" },
+      "temp_swing_c": { "value": 12.2, "unit": "°C", "source": "NASA POWER", "dataset": "Computed T2M_MAX - T2M_MIN", "resolution": "55 km", "mode": "live" },
+      "air_pressure_kpa": { "value": 91.2, "unit": "kPa", "source": "NASA POWER", "dataset": "NASA POWER Surface Pressure (PS)", "resolution": "55 km", "mode": "live" },
+      "humidity_pct": { "value": 32.0, "unit": "%", "source": "NASA POWER", "dataset": "NASA POWER RH2M", "resolution": "55 km", "mode": "live" },
+      "wind_speed_ms": { "value": 4.5, "unit": "m/s", "source": "NASA POWER", "dataset": "NASA POWER WS2M", "resolution": "55 km", "mode": "live" },
+      "dust_activity_level": { "value": "medium", "unit": "tier", "source": "MODIS via Worldview", "dataset": "MODIS Aerosol Dust Index", "resolution": "1 km", "mode": "pre-processed" },
+      "radiation_proxy": { "value": 0.62, "unit": "0-1", "source": "Calculated (altitude from SRTM)", "dataset": "Elevation UV Thinning Proxy", "resolution": "30 m", "mode": "pre-processed" }
+    },
+    "resources": {
+      "water_ice_presence": { "value": "trace", "unit": "tier", "source": "USGS", "dataset": "Serpentinization Aquifer Trace", "resolution": "100 m", "mode": "pre-processed" },
+      "minerals_for_building_fuel": { "value": ["olivine", "serpentine", "magnesium carbonate", "chromite"], "unit": "tags", "source": "USGS / Sentinel-2", "dataset": "Samail Ultramafic Mineralogy", "resolution": "10 m", "mode": "pre-processed" },
+      "sunlight_hours_per_day": { "value": 9.3, "unit": "hrs/day", "source": "NASA POWER", "dataset": "NASA POWER ALLSKY_SFC_SW_DWN", "resolution": "55 km", "mode": "live" }
+    },
+    "operations": {
+      "distance_to_help_km": { "value": 85, "unit": "km", "source": "Calculated (to Muscat / Ibra)", "dataset": "Haversine Distance to Hub", "resolution": "Point", "mode": "pre-processed" },
+      "comm_delay_s": { "value": 0, "unit": "s", "source": "Terrestrial Baseline", "dataset": "Local Line-of-Sight / Sat", "resolution": "Scalar", "mode": "pre-processed" },
+      "terrain_visibility": { "value": 0.97, "unit": "0-1", "source": "Copernicus Sentinel-2", "dataset": "Cloud-Free Ultramafic Mapping", "resolution": "10 m", "mode": "pre-processed" },
+      "hazard_score": { "value": 0.44, "unit": "0-1", "source": "USGS / Copernicus", "dataset": "Wadi Flash-Flood & Slope Hazard", "resolution": "30 m", "mode": "pre-processed" }
+    },
+    "data_quality": {
+      "dataset_resolution_m": { "value": 10, "unit": "m", "source": "Copernicus / Sentinel-2 / POWER", "dataset": "Primary Mapping Resolution", "resolution": "10-30 m", "mode": "pre-processed" },
+      "coverage": { "value": 0.99, "unit": "0-1", "source": "ESA / NASA / USGS", "dataset": "Spatial Data Coverage", "resolution": "Regional", "mode": "pre-processed" }
+    },
+    "radarView": { "available": false }
+  },
+  {
+    "id": "lonar-crater",
+    "world": "earth",
+    "name": "Lonar Crater, India",
+    "region": "Deccan Traps, Maharashtra, India",
+    "lat": 19.98,
+    "lon": 76.51,
+    "expectedTwinId": "linne-crater",
+    "expectedTwinWorld": "moon",
+    "gravity_g": 1.0,
+    "aridity_index": 0.44,
+    "volcanic_flag": true,
+    "summary": "Earth's only known hypervelocity impact crater excavated into flood basalt — direct structural twin to Linné Crater.",
+    "terrain": {
+      "rock_soil_type": { "value": "basalt", "unit": "class", "source": "USGS / GSI", "dataset": "Deccan Flood Basalt Lithology", "resolution": "50 m", "mode": "pre-processed" },
+      "slope_deg": { "value": 16.8, "unit": "deg", "source": "Copernicus DEM / SRTM via Earthdata", "dataset": "Copernicus DEM GLO-30", "resolution": "30 m", "mode": "pre-processed" },
+      "roughness_index": { "value": 0.72, "unit": "0-1", "source": "SRTM via Earthdata", "dataset": "Crater Rim Ruggedness", "resolution": "30 m", "mode": "pre-processed" },
+      "rock_abundance_pct": { "value": 15.2, "unit": "%", "source": "JAXA ALOS-2 / Sentinel-2", "dataset": "Ejecta Block Exposure", "resolution": "10 m", "mode": "pre-processed" },
+      "crater_boulder_density": { "value": 380, "unit": "boulders/km²", "source": "USGS / Earth Impact DB", "dataset": "Rim Ejecta Block Survey", "resolution": "6 m", "mode": "pre-processed" },
+      "elevation_m": { "value": 550, "unit": "m", "source": "SRTM / Copernicus DEM via Earthdata", "dataset": "Copernicus DEM GLO-30", "resolution": "30 m", "mode": "pre-processed" },
+      "landforms": { "value": ["impact crater", "basalt ejecta", "steep rim"], "unit": "tags", "source": "USGS / Earth Impact DB", "dataset": "Lonar Impact Morphometry", "resolution": "6 m", "mode": "pre-processed" }
+    },
+    "climate": {
+      "temp_day_c": { "value": 32.8, "unit": "°C", "source": "NASA POWER", "dataset": "NASA POWER T2M_MAX", "resolution": "55 km", "mode": "live" },
+      "temp_night_c": { "value": 20.1, "unit": "°C", "source": "NASA POWER", "dataset": "NASA POWER T2M_MIN", "resolution": "55 km", "mode": "live" },
+      "temp_swing_c": { "value": 12.7, "unit": "°C", "source": "NASA POWER", "dataset": "Computed T2M_MAX - T2M_MIN", "resolution": "55 km", "mode": "live" },
+      "air_pressure_kpa": { "value": 94.6, "unit": "kPa", "source": "NASA POWER", "dataset": "NASA POWER Surface Pressure (PS)", "resolution": "55 km", "mode": "live" },
+      "humidity_pct": { "value": 52.0, "unit": "%", "source": "NASA POWER", "dataset": "NASA POWER RH2M", "resolution": "55 km", "mode": "live" },
+      "wind_speed_ms": { "value": 3.2, "unit": "m/s", "source": "NASA POWER", "dataset": "NASA POWER WS2M", "resolution": "55 km", "mode": "live" },
+      "dust_activity_level": { "value": "low", "unit": "tier", "source": "MODIS via Worldview", "dataset": "MODIS Aerosol Dust Index", "resolution": "1 km", "mode": "pre-processed" },
+      "radiation_proxy": { "value": 0.48, "unit": "0-1", "source": "Calculated (altitude from SRTM)", "dataset": "Elevation UV Thinning Proxy", "resolution": "30 m", "mode": "pre-processed" }
+    },
+    "resources": {
+      "water_ice_presence": { "value": "none", "unit": "tier", "source": "USGS / WorldClim", "dataset": "Tropical Crater Lake (liquid)", "resolution": "1 km", "mode": "pre-processed" },
+      "minerals_for_building_fuel": { "value": ["basalt", "plagioclase", "pyroxene", "ilmenite"], "unit": "tags", "source": "USGS / GSI", "dataset": "Deccan Basalt Geochemistry", "resolution": "Site", "mode": "pre-processed" },
+      "sunlight_hours_per_day": { "value": 8.2, "unit": "hrs/day", "source": "NASA POWER", "dataset": "NASA POWER ALLSKY_SFC_SW_DWN", "resolution": "55 km", "mode": "live" }
+    },
+    "operations": {
+      "distance_to_help_km": { "value": 95, "unit": "km", "source": "Calculated (to Aurangabad)", "dataset": "Haversine Distance to Hub", "resolution": "Point", "mode": "pre-processed" },
+      "comm_delay_s": { "value": 0, "unit": "s", "source": "Terrestrial Baseline", "dataset": "Local Line-of-Sight / Sat", "resolution": "Scalar", "mode": "pre-processed" },
+      "terrain_visibility": { "value": 0.95, "unit": "0-1", "source": "JAXA ALOS-2 + CSA RCM", "dataset": "L-Band + C-Band SAR Coverage", "resolution": "6 m", "mode": "pre-processed" },
+      "hazard_score": { "value": 0.54, "unit": "0-1", "source": "Copernicus DEM", "dataset": "Crater Wall Rockfall Hazard", "resolution": "30 m", "mode": "pre-processed" }
+    },
+    "data_quality": {
+      "dataset_resolution_m": { "value": 6, "unit": "m", "source": "JAXA ALOS-2 / Copernicus", "dataset": "ALOS-2 PALSAR-2 + DEM", "resolution": "6-30 m", "mode": "pre-processed" },
+      "coverage": { "value": 0.97, "unit": "0-1", "source": "JAXA / ESA / NASA", "dataset": "Spatial Data Coverage", "resolution": "Site", "mode": "pre-processed" }
+    },
+    "radarView": {
+      "available": true,
+      "imageKey": "impact-crater",
+      "instrument": "JAXA ALOS-2 PALSAR-2 L-Band / CSA RCM",
+      "source": "JAXA G-Portal & CSA Open Data",
+      "caption": "Orbital SAR reveals the circular 1.88 km basaltic impact rim, upturned ejecta collar, and interior wall gullies."
+    }
+  },
+  {
+    "id": "chagai-taftan",
+    "world": "earth",
+    "name": "Chagai / Koh-e-Taftan, Pakistan",
+    "region": "Balochistan-Sistan Volcanic Arc",
+    "lat": 28.6,
+    "lon": 61.6,
+    "expectedTwinId": "marius-hills",
+    "expectedTwinWorld": "moon",
+    "gravity_g": 1.0,
+    "aridity_index": 0.05,
+    "volcanic_flag": true,
+    "summary": "Hyper-arid, barren volcanic domes and rocky basaltic aprons — morphological match for the Marius Hills volcanic dome province.",
+    "terrain": {
+      "rock_soil_type": { "value": "basalt", "unit": "class", "source": "Smithsonian GVP / USGS", "dataset": "Taftan Volcanic Arc Lithology", "resolution": "100 m", "mode": "pre-processed" },
+      "slope_deg": { "value": 15.2, "unit": "deg", "source": "SRTM / Copernicus DEM via Earthdata", "dataset": "SRTM 1-Arc-Second Slope", "resolution": "30 m", "mode": "pre-processed" },
+      "roughness_index": { "value": 0.78, "unit": "0-1", "source": "SRTM via Earthdata", "dataset": "Volcanic Dome Ruggedness", "resolution": "30 m", "mode": "pre-processed" },
+      "rock_abundance_pct": { "value": 12.5, "unit": "%", "source": "Copernicus Sentinel-2", "dataset": "Barren Volcanic Scree %", "resolution": "10 m", "mode": "pre-processed" },
+      "crater_boulder_density": { "value": 240, "unit": "boulders/km²", "source": "USGS / Copernicus", "dataset": "Dome Apron Talus Estimate", "resolution": "10 m", "mode": "pre-processed" },
+      "elevation_m": { "value": 2480, "unit": "m", "source": "SRTM / Copernicus DEM via Earthdata", "dataset": "Copernicus DEM GLO-30", "resolution": "30 m", "mode": "pre-processed" },
+      "landforms": { "value": ["volcanic domes", "lava fields", "rocky cones"], "unit": "tags", "source": "Smithsonian GVP", "dataset": "GVP Holocene Volcano Profile", "resolution": "Regional", "mode": "pre-processed" }
+    },
+    "climate": {
+      "temp_day_c": { "value": 26.5, "unit": "°C", "source": "NASA POWER", "dataset": "NASA POWER T2M_MAX", "resolution": "55 km", "mode": "live" },
+      "temp_night_c": { "value": 10.2, "unit": "°C", "source": "NASA POWER", "dataset": "NASA POWER T2M_MIN", "resolution": "55 km", "mode": "live" },
+      "temp_swing_c": { "value": 16.3, "unit": "°C", "source": "NASA POWER", "dataset": "Computed T2M_MAX - T2M_MIN", "resolution": "55 km", "mode": "live" },
+      "air_pressure_kpa": { "value": 75.2, "unit": "kPa", "source": "NASA POWER", "dataset": "NASA POWER Surface Pressure (PS)", "resolution": "55 km", "mode": "live" },
+      "humidity_pct": { "value": 24.0, "unit": "%", "source": "NASA POWER", "dataset": "NASA POWER RH2M", "resolution": "55 km", "mode": "live" },
+      "wind_speed_ms": { "value": 5.1, "unit": "m/s", "source": "NASA POWER", "dataset": "NASA POWER WS2M", "resolution": "55 km", "mode": "live" },
+      "dust_activity_level": { "value": "medium", "unit": "tier", "source": "MODIS via Worldview", "dataset": "MODIS Aerosol Dust Index", "resolution": "1 km", "mode": "pre-processed" },
+      "radiation_proxy": { "value": 0.78, "unit": "0-1", "source": "Calculated (altitude from SRTM)", "dataset": "2.48 km Altitude UV Proxy", "resolution": "30 m", "mode": "pre-processed" }
+    },
+    "resources": {
+      "water_ice_presence": { "value": "none", "unit": "tier", "source": "USGS / WorldClim", "dataset": "Arid Volcanic Arc", "resolution": "1 km", "mode": "pre-processed" },
+      "minerals_for_building_fuel": { "value": ["basalt", "volcanic glass", "sulfur", "copper-porphyry"], "unit": "tags", "source": "USGS / GVP", "dataset": "Chagai Arc Mineral Survey", "resolution": "Regional", "mode": "pre-processed" },
+      "sunlight_hours_per_day": { "value": 9.1, "unit": "hrs/day", "source": "NASA POWER", "dataset": "NASA POWER ALLSKY_SFC_SW_DWN", "resolution": "55 km", "mode": "live" }
+    },
+    "operations": {
+      "distance_to_help_km": { "value": 135, "unit": "km", "source": "Calculated (to Zahedan / Taftan)", "dataset": "Haversine Distance to Hub", "resolution": "Point", "mode": "pre-processed" },
+      "comm_delay_s": { "value": 0, "unit": "s", "source": "Terrestrial Baseline", "dataset": "Local Line-of-Sight / Sat", "resolution": "Scalar", "mode": "pre-processed" },
+      "terrain_visibility": { "value": 0.93, "unit": "0-1", "source": "Copernicus Sentinel-2", "dataset": "Cloud-Free Arid Optical", "resolution": "10 m", "mode": "pre-processed" },
+      "hazard_score": { "value": 0.50, "unit": "0-1", "source": "Smithsonian GVP / USGS", "dataset": "Fumarolic & Slope Hazard", "resolution": "Regional", "mode": "pre-processed" }
+    },
+    "data_quality": {
+      "dataset_resolution_m": { "value": 30, "unit": "m", "source": "SRTM / Copernicus / GVP", "dataset": "Primary DEM Resolution", "resolution": "30 m", "mode": "pre-processed" },
+      "coverage": { "value": 0.92, "unit": "0-1", "source": "ESA / NASA / Smithsonian", "dataset": "Spatial Data Coverage", "resolution": "Regional", "mode": "pre-processed" }
+    },
+    "radarView": { "available": false }
+  },
+  {
+    "id": "mount-suswa",
+    "world": "earth",
+    "name": "Mount Suswa, Kenya",
+    "region": "Great Rift Valley, Kenya",
+    "lat": -1.15,
+    "lon": 36.35,
+    "expectedTwinId": "tranquillitatis-pit",
+    "expectedTwinWorld": "moon",
+    "gravity_g": 1.0,
+    "aridity_index": 0.34,
+    "volcanic_flag": true,
+    "summary": "Double-caldera shield volcano pierced by 40+ collapsed lava-tube skylights — premier terrestrial lab for lunar cave shelters.",
+    "terrain": {
+      "rock_soil_type": { "value": "basalt", "unit": "class", "source": "Smithsonian GVP / USGS", "dataset": "Rift Phonolite-Basalt Flows", "resolution": "100 m", "mode": "pre-processed" },
+      "slope_deg": { "value": 13.8, "unit": "deg", "source": "Copernicus DEM / SRTM via Earthdata", "dataset": "Copernicus DEM GLO-30", "resolution": "30 m", "mode": "pre-processed" },
+      "roughness_index": { "value": 0.70, "unit": "0-1", "source": "SRTM via Earthdata", "dataset": "Caldera Rim Ruggedness", "resolution": "30 m", "mode": "pre-processed" },
+      "rock_abundance_pct": { "value": 13.5, "unit": "%", "source": "Copernicus Sentinel-2", "dataset": "Exposed Lava Flow Fraction", "resolution": "10 m", "mode": "pre-processed" },
+      "crater_boulder_density": { "value": 310, "unit": "boulders/km²", "source": "USGS / GVP", "dataset": "Skylight Collapse Talus", "resolution": "10 m", "mode": "pre-processed" },
+      "elevation_m": { "value": 1890, "unit": "m", "source": "SRTM / Copernicus DEM via Earthdata", "dataset": "Copernicus DEM GLO-30", "resolution": "30 m", "mode": "pre-processed" },
+      "landforms": { "value": ["lava tubes", "skylight pit", "collapse caldera"], "unit": "tags", "source": "Smithsonian GVP", "dataset": "Suswa Lava Cave Survey", "resolution": "Site", "mode": "pre-processed" }
+    },
+    "climate": {
+      "temp_day_c": { "value": 23.4, "unit": "°C", "source": "NASA POWER", "dataset": "NASA POWER T2M_MAX (17°C in caves)", "resolution": "55 km", "mode": "live" },
+      "temp_night_c": { "value": 12.1, "unit": "°C", "source": "NASA POWER", "dataset": "NASA POWER T2M_MIN", "resolution": "55 km", "mode": "live" },
+      "temp_swing_c": { "value": 11.3, "unit": "°C", "source": "NASA POWER", "dataset": "Moderate Equatorial Swing", "resolution": "55 km", "mode": "live" },
+      "air_pressure_kpa": { "value": 81.0, "unit": "kPa", "source": "NASA POWER", "dataset": "NASA POWER Surface Pressure (PS)", "resolution": "55 km", "mode": "live" },
+      "humidity_pct": { "value": 58.0, "unit": "%", "source": "NASA POWER", "dataset": "NASA POWER RH2M", "resolution": "55 km", "mode": "live" },
+      "wind_speed_ms": { "value": 3.4, "unit": "m/s", "source": "NASA POWER", "dataset": "NASA POWER WS2M", "resolution": "55 km", "mode": "live" },
+      "dust_activity_level": { "value": "low", "unit": "tier", "source": "MODIS via Worldview", "dataset": "MODIS Aerosol Index", "resolution": "1 km", "mode": "pre-processed" },
+      "radiation_proxy": { "value": 0.46, "unit": "0-1", "source": "Calculated (altitude + cave shielding)", "dataset": "1.89 km Shielding Baseline", "resolution": "30 m", "mode": "pre-processed" }
+    },
+    "resources": {
+      "water_ice_presence": { "value": "none", "unit": "tier", "source": "USGS / GVP", "dataset": "Seasonal Rift Vapor", "resolution": "1 km", "mode": "pre-processed" },
+      "minerals_for_building_fuel": { "value": ["basalt", "phonolite", "sinterable regolith"], "unit": "tags", "source": "USGS / GVP", "dataset": "East African Rift Volcanics", "resolution": "Site", "mode": "pre-processed" },
+      "sunlight_hours_per_day": { "value": 8.4, "unit": "hrs/day", "source": "NASA POWER", "dataset": "NASA POWER ALLSKY_SFC_SW_DWN", "resolution": "55 km", "mode": "live" }
+    },
+    "operations": {
+      "distance_to_help_km": { "value": 55, "unit": "km", "source": "Calculated (to Nairobi)", "dataset": "Haversine Distance to Hub", "resolution": "Point", "mode": "pre-processed" },
+      "comm_delay_s": { "value": 0, "unit": "s", "source": "Terrestrial Baseline", "dataset": "Local Line-of-Sight / Sat", "resolution": "Scalar", "mode": "pre-processed" },
+      "terrain_visibility": { "value": 0.76, "unit": "0-1", "source": "Copernicus Sentinel-1/2", "dataset": "Subsurface Cave Shadow Limits", "resolution": "10 m", "mode": "pre-processed" },
+      "hazard_score": { "value": 0.58, "unit": "0-1", "source": "Smithsonian GVP", "dataset": "Pit Collapse Rim Hazard", "resolution": "30 m", "mode": "pre-processed" }
+    },
+    "data_quality": {
+      "dataset_resolution_m": { "value": 30, "unit": "m", "source": "Copernicus / SRTM / GVP", "dataset": "Primary DEM Resolution", "resolution": "30 m", "mode": "pre-processed" },
+      "coverage": { "value": 0.90, "unit": "0-1", "source": "ESA / NASA / Smithsonian", "dataset": "Spatial Data Coverage", "resolution": "Site", "mode": "pre-processed" }
+    },
+    "radarView": { "available": false }
+  },
+  {
+    "id": "pinacate",
+    "world": "earth",
+    "name": "Pinacate Volcanic Field, Mexico",
+    "region": "Sonoran Desert, Sonora, Mexico",
+    "lat": 31.77,
+    "lon": -113.5,
+    "expectedTwinId": "apollo-17",
+    "expectedTwinWorld": "moon",
+    "gravity_g": 1.0,
+    "aridity_index": 0.05,
+    "volcanic_flag": true,
+    "summary": "Official NASA Apollo 14 & 17 astronaut geology training site — maar craters, volcanic ash, and basaltic lava fields.",
+    "terrain": {
+      "rock_soil_type": { "value": "volcanic ash", "unit": "class", "source": "USGS / Apollo Archive", "dataset": "Pinacate Pyroclastic & Basalt Map", "resolution": "30 m", "mode": "pre-processed" },
+      "slope_deg": { "value": 10.6, "unit": "deg", "source": "SRTM / Copernicus DEM via Earthdata", "dataset": "SRTM 1-Arc-Second Slope", "resolution": "30 m", "mode": "pre-processed" },
+      "roughness_index": { "value": 0.66, "unit": "0-1", "source": "SRTM via Earthdata", "dataset": "Maar & Scoria Cone Roughness", "resolution": "30 m", "mode": "pre-processed" },
+      "rock_abundance_pct": { "value": 10.4, "unit": "%", "source": "Copernicus Sentinel-2", "dataset": "Basaltic Scoria Cover %", "resolution": "10 m", "mode": "pre-processed" },
+      "crater_boulder_density": { "value": 250, "unit": "boulders/km²", "source": "USGS / Apollo Field Map", "dataset": "El Elegante Rim Tally", "resolution": "5 m", "mode": "pre-processed" },
+      "elevation_m": { "value": 460, "unit": "m", "source": "SRTM / Copernicus DEM via Earthdata", "dataset": "SRTM 1-Arc-Second DEM", "resolution": "30 m", "mode": "pre-processed" },
+      "landforms": { "value": ["volcanic craters", "lava fields", "pyroclastic ash"], "unit": "tags", "source": "Smithsonian GVP / USGS", "dataset": "Pinacate Maar Catalog", "resolution": "30 m", "mode": "pre-processed" }
+    },
+    "climate": {
+      "temp_day_c": { "value": 30.8, "unit": "°C", "source": "NASA POWER", "dataset": "NASA POWER T2M_MAX", "resolution": "55 km", "mode": "live" },
+      "temp_night_c": { "value": 13.4, "unit": "°C", "source": "NASA POWER", "dataset": "NASA POWER T2M_MIN", "resolution": "55 km", "mode": "live" },
+      "temp_swing_c": { "value": 17.4, "unit": "°C", "source": "NASA POWER", "dataset": "Computed T2M_MAX - T2M_MIN", "resolution": "55 km", "mode": "live" },
+      "air_pressure_kpa": { "value": 96.2, "unit": "kPa", "source": "NASA POWER", "dataset": "NASA POWER Surface Pressure (PS)", "resolution": "55 km", "mode": "live" },
+      "humidity_pct": { "value": 26.0, "unit": "%", "source": "NASA POWER", "dataset": "NASA POWER RH2M", "resolution": "55 km", "mode": "live" },
+      "wind_speed_ms": { "value": 3.8, "unit": "m/s", "source": "NASA POWER", "dataset": "NASA POWER WS2M", "resolution": "55 km", "mode": "live" },
+      "dust_activity_level": { "value": "medium", "unit": "tier", "source": "MODIS via Worldview", "dataset": "Sonoran Dust Index", "resolution": "1 km", "mode": "pre-processed" },
+      "radiation_proxy": { "value": 0.54, "unit": "0-1", "source": "Calculated (altitude from SRTM)", "dataset": "Elevation + Clear-Sky UV Proxy", "resolution": "30 m", "mode": "pre-processed" }
+    },
+    "resources": {
+      "water_ice_presence": { "value": "trace", "unit": "tier", "source": "USGS / WorldClim", "dataset": "Hyper-Arid Sonoran Baseline", "resolution": "1 km", "mode": "pre-processed" },
+      "minerals_for_building_fuel": { "value": ["basalt", "volcanic ash", "ilmenite", "plagioclase"], "unit": "tags", "source": "USGS", "dataset": "USGS Volcanic Tephra Survey", "resolution": "Site", "mode": "pre-processed" },
+      "sunlight_hours_per_day": { "value": 9.2, "unit": "hrs/day", "source": "NASA POWER", "dataset": "NASA POWER ALLSKY_SFC_SW_DWN", "resolution": "55 km", "mode": "live" }
+    },
+    "operations": {
+      "distance_to_help_km": { "value": 52, "unit": "km", "source": "Calculated (to Puerto Peñasco / Sonoyta)", "dataset": "Haversine Distance to Hub", "resolution": "Point", "mode": "pre-processed" },
+      "comm_delay_s": { "value": 0, "unit": "s", "source": "Terrestrial Baseline", "dataset": "Local Line-of-Sight / Sat", "resolution": "Scalar", "mode": "pre-processed" },
+      "terrain_visibility": { "value": 0.97, "unit": "0-1", "source": "CSA RCM + Sentinel-2", "dataset": "Clear Desert Optical & SAR", "resolution": "5 m", "mode": "pre-processed" },
+      "hazard_score": { "value": 0.42, "unit": "0-1", "source": "USGS / Apollo Training Log", "dataset": "Thermal & Lava Field Hazard", "resolution": "30 m", "mode": "pre-processed" }
+    },
+    "data_quality": {
+      "dataset_resolution_m": { "value": 5, "unit": "m", "source": "CSA RCM / SRTM / USGS", "dataset": "CSA RCM SAR + SRTM", "resolution": "5-30 m", "mode": "pre-processed" },
+      "coverage": { "value": 0.99, "unit": "0-1", "source": "NASA / CSA / USGS", "dataset": "Spatial Data Coverage", "resolution": "Regional", "mode": "pre-processed" }
+    },
+    "radarView": {
+      "available": true,
+      "imageKey": "volcanic-flows",
+      "instrument": "CSA RADARSAT Constellation Mission (RCM)",
+      "source": "CSA Open Data Portal",
+      "caption": "Dual-polarization SAR differentiates rough basaltic aa lava flows from smooth pyroclastic cinder aprons at El Pinacate."
+    }
+  },
+  {
+    "id": "teide",
+    "world": "earth",
+    "name": "Teide / Las Cañadas, Tenerife",
+    "region": "Tenerife, Canary Islands",
+    "lat": 28.27,
+    "lon": -16.64,
+    "expectedTwinId": "apollo-15",
+    "expectedTwinWorld": "moon",
+    "gravity_g": 1.0,
+    "aridity_index": 0.16,
+    "volcanic_flag": true,
+    "summary": "Barren 2,180 m volcanic caldera above the cloud deck — active lunar rover autonomy and Apollo 15 highland slope analog.",
+    "terrain": {
+      "rock_soil_type": { "value": "basalt", "unit": "class", "source": "Smithsonian GVP / ESA", "dataset": "Las Cañadas Basalt-Phonolite Map", "resolution": "10 m", "mode": "pre-processed" },
+      "slope_deg": { "value": 14.6, "unit": "deg", "source": "Copernicus DEM / SRTM via Earthdata", "dataset": "Copernicus DEM GLO-30", "resolution": "30 m", "mode": "pre-processed" },
+      "roughness_index": { "value": 0.80, "unit": "0-1", "source": "Copernicus DEM via Earthdata", "dataset": "Caldera Slope Ruggedness", "resolution": "30 m", "mode": "pre-processed" },
+      "rock_abundance_pct": { "value": 13.0, "unit": "%", "source": "Copernicus Sentinel-2", "dataset": "Barren Volcanic Scree %", "resolution": "10 m", "mode": "pre-processed" },
+      "crater_boulder_density": { "value": 295, "unit": "boulders/km²", "source": "ESA PANGAEA", "dataset": "Lunar Rover Testbed Boulder Tally", "resolution": "2 m", "mode": "pre-processed" },
+      "elevation_m": { "value": 2180, "unit": "m", "source": "Copernicus DEM / SRTM via Earthdata", "dataset": "Copernicus DEM GLO-30", "resolution": "30 m", "mode": "pre-processed" },
+      "landforms": { "value": ["volcanic ground", "lava channel", "highland slope"], "unit": "tags", "source": "Smithsonian GVP / ESA", "dataset": "Teide Volcanic Morphometry", "resolution": "10 m", "mode": "pre-processed" }
+    },
+    "climate": {
+      "temp_day_c": { "value": 17.6, "unit": "°C", "source": "NASA POWER", "dataset": "NASA POWER T2M_MAX", "resolution": "55 km", "mode": "live" },
+      "temp_night_c": { "value": 5.4, "unit": "°C", "source": "NASA POWER", "dataset": "NASA POWER T2M_MIN", "resolution": "55 km", "mode": "live" },
+      "temp_swing_c": { "value": 12.2, "unit": "°C", "source": "NASA POWER", "dataset": "Computed T2M_MAX - T2M_MIN", "resolution": "55 km", "mode": "live" },
+      "air_pressure_kpa": { "value": 78.4, "unit": "kPa", "source": "NASA POWER", "dataset": "NASA POWER Surface Pressure (PS)", "resolution": "55 km", "mode": "live" },
+      "humidity_pct": { "value": 36.0, "unit": "%", "source": "NASA POWER", "dataset": "NASA POWER RH2M", "resolution": "55 km", "mode": "live" },
+      "wind_speed_ms": { "value": 5.2, "unit": "m/s", "source": "NASA POWER", "dataset": "NASA POWER WS2M", "resolution": "55 km", "mode": "live" },
+      "dust_activity_level": { "value": "low", "unit": "tier", "source": "MODIS via Worldview", "dataset": "Above Cloud-Inversion Air", "resolution": "1 km", "mode": "pre-processed" },
+      "radiation_proxy": { "value": 0.82, "unit": "0-1", "source": "Calculated (altitude from SRTM)", "dataset": "2.18 km High-Altitude UV Proxy", "resolution": "30 m", "mode": "pre-processed" }
+    },
+    "resources": {
+      "water_ice_presence": { "value": "none", "unit": "tier", "source": "USGS / GVP", "dataset": "Arid Sub-Alpine Caldera", "resolution": "1 km", "mode": "pre-processed" },
+      "minerals_for_building_fuel": { "value": ["basalt", "plagioclase", "tephra", "anorthosite"], "unit": "tags", "source": "Smithsonian GVP / ESA", "dataset": "Las Cañadas Petrophysics", "resolution": "Site", "mode": "pre-processed" },
+      "sunlight_hours_per_day": { "value": 8.9, "unit": "hrs/day", "source": "NASA POWER", "dataset": "NASA POWER ALLSKY_SFC_SW_DWN", "resolution": "55 km", "mode": "live" }
+    },
+    "operations": {
+      "distance_to_help_km": { "value": 34, "unit": "km", "source": "Calculated (to Santa Cruz / La Laguna)", "dataset": "Haversine Distance to Hub", "resolution": "Point", "mode": "pre-processed" },
+      "comm_delay_s": { "value": 0, "unit": "s", "source": "Terrestrial Baseline", "dataset": "Local Line-of-Sight / Sat", "resolution": "Scalar", "mode": "pre-processed" },
+      "terrain_visibility": { "value": 0.98, "unit": "0-1", "source": "Copernicus Sentinel-1/2", "dataset": "Above-Cloud Optical & SAR", "resolution": "10 m", "mode": "pre-processed" },
+      "hazard_score": { "value": 0.46, "unit": "0-1", "source": "Smithsonian GVP / ESA", "dataset": "Caldera Slope & Volcanic Hazard", "resolution": "30 m", "mode": "pre-processed" }
+    },
+    "data_quality": {
+      "dataset_resolution_m": { "value": 10, "unit": "m", "source": "Copernicus / Sentinel-1/2 / POWER", "dataset": "Sentinel-2 + Copernicus DEM", "resolution": "10-30 m", "mode": "pre-processed" },
+      "coverage": { "value": 0.99, "unit": "0-1", "source": "ESA / NASA", "dataset": "Spatial Data Coverage", "resolution": "Site", "mode": "pre-processed" }
+    },
+    "radarView": {
+      "available": true,
+      "imageKey": "volcanic-flows",
+      "instrument": "Copernicus Sentinel-1 C-SAR / CSA RCM",
+      "source": "Copernicus Data Space / CSA",
+      "caption": "C-band SAR maps rough basaltic lava tongues and high-slope caldera walls used for European lunar rover trials."
+    }
+  }
+]

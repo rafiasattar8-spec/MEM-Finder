@@ -1,0 +1,6 @@
+{
+  "name": "MEM Finder",
+  "description": "Find Earth's twin for every Moon and Mars mission using open NASA, ESA, CSA, and JAXA planetary and terrestrial datasets.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

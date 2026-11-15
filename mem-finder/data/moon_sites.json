@@ -1,0 +1,272 @@
+[
+  {
+    "id": "linne-crater",
+    "world": "moon",
+    "name": "Linné Crater",
+    "region": "Mare Serenitatis",
+    "lat": 27.7,
+    "lon": 11.8,
+    "seededAnalogId": "lonar-crater",
+    "gravity_g": 0.165,
+    "summary": "2.2 km pristine simple impact crater punched into flat Mare Serenitatis flood basalt — benchmark geometry for crater-wall mechanics.",
+    "terrain": {
+      "rock_soil_type": { "value": "basalt", "unit": "class", "source": "NASA PDS / LRO LROC", "dataset": "LROC NAC + M3 Basalt Map", "resolution": "0.5 m", "mode": "pre-processed" },
+      "slope_deg": { "value": 17.5, "unit": "deg", "source": "LRO LOLA via NASA PDS", "dataset": "LOLA Polar/Equatorial Slope", "resolution": "30 m", "mode": "pre-processed" },
+      "roughness_index": { "value": 0.72, "unit": "0-1", "source": "LRO LOLA via NASA PDS", "dataset": "LOLA 100m Baseline Roughness", "resolution": "100 m", "mode": "pre-processed" },
+      "rock_abundance_pct": { "value": 14.5, "unit": "%", "source": "LRO Diviner via NASA PDS", "dataset": "Diviner Rock Abundance", "resolution": "237 m", "mode": "pre-processed" },
+      "crater_boulder_density": { "value": 420, "unit": "boulders/km²", "source": "NASA PDS / LRO LROC", "dataset": "LROC NAC Boulder Catalog", "resolution": "0.5 m", "mode": "pre-processed" },
+      "elevation_m": { "value": -2560, "unit": "m", "source": "LRO LOLA via NASA PDS", "dataset": "LOLA Gridded Elevation LDEM", "resolution": "237 m", "mode": "pre-processed" },
+      "landforms": { "value": ["impact crater", "basalt ejecta", "steep rim"], "unit": "tags", "source": "NASA PDS / LRO LROC", "dataset": "LROC Geomorphic Feature Map", "resolution": "0.5 m", "mode": "pre-processed" }
+    },
+    "climate": {
+      "temp_day_c": { "value": 112, "unit": "°C", "source": "LRO Diviner via NASA PDS", "dataset": "Diviner Bolometric Temp", "resolution": "237 m", "mode": "pre-processed" },
+      "temp_night_c": { "value": -171, "unit": "°C", "source": "LRO Diviner via NASA PDS", "dataset": "Diviner Bolometric Temp", "resolution": "237 m", "mode": "pre-processed" },
+      "temp_swing_c": { "value": 283, "unit": "°C", "source": "LRO Diviner via NASA PDS", "dataset": "Diviner Diurnal Amplitude", "resolution": "237 m", "mode": "pre-processed" },
+      "air_pressure_kpa": { "value": 0.0, "unit": "kPa", "source": "NASA PDS / Moon Fact Sheet", "dataset": "Lunar Exosphere Reference", "resolution": "Global", "mode": "pre-processed" },
+      "humidity_pct": { "value": 0.0, "unit": "%", "source": "NASA PDS / Moon Fact Sheet", "dataset": "Lunar Exosphere Reference", "resolution": "Global", "mode": "pre-processed" },
+      "wind_speed_ms": { "value": 0.0, "unit": "m/s", "source": "NASA PDS / Moon Fact Sheet", "dataset": "Vacuum Surface Baseline", "resolution": "Global", "mode": "pre-processed" },
+      "dust_activity_level": { "value": "low", "unit": "tier", "source": "NASA PDS / LRO LADEE", "dataset": "LADEE Exospheric Dust", "resolution": "Orbital", "mode": "pre-processed" },
+      "radiation_proxy": { "value": 0.88, "unit": "0-1", "source": "NASA PDS / LRO CRaTER", "dataset": "CRaTER Dose Model", "resolution": "Orbital", "mode": "pre-processed" }
+    },
+    "resources": {
+      "water_ice_presence": { "value": "none", "unit": "tier", "source": "NASA PDS / LEND", "dataset": "LEND Neutron Flux", "resolution": "5 km", "mode": "pre-processed" },
+      "minerals_for_building_fuel": { "value": ["basalt", "plagioclase", "pyroxene", "ilmenite"], "unit": "tags", "source": "NASA PDS / M3", "dataset": "Moon Mineralogy Mapper (M3)", "resolution": "140 m", "mode": "pre-processed" },
+      "sunlight_hours_per_day": { "value": 12.0, "unit": "hrs/day", "source": "NASA PDS / LRO LROC", "dataset": "LROC Solar Illumination Map", "resolution": "60 m", "mode": "pre-processed" }
+    },
+    "operations": {
+      "distance_to_help_km": { "value": 384400, "unit": "km", "source": "Calculated (Earth-Moon mean)", "dataset": "JPL Horizons Ephemeris", "resolution": "Scalar", "mode": "pre-processed" },
+      "comm_delay_s": { "value": 1.3, "unit": "s", "source": "Calculated (light-time one way)", "dataset": "NASA SCaN Link Budget", "resolution": "Scalar", "mode": "pre-processed" },
+      "terrain_visibility": { "value": 0.96, "unit": "0-1", "source": "NASA PDS / LRO LROC", "dataset": "LROC NAC Optical Coverage", "resolution": "0.5 m", "mode": "pre-processed" },
+      "hazard_score": { "value": 0.56, "unit": "0-1", "source": "LRO LOLA via NASA PDS", "dataset": "Crater Wall Slope Hazard", "resolution": "5 m", "mode": "pre-processed" }
+    },
+    "data_quality": {
+      "dataset_resolution_m": { "value": 30, "unit": "m", "source": "NASA PDS Geosciences", "dataset": "LOLA + LROC Composite", "resolution": "0.5-237 m", "mode": "pre-processed" },
+      "coverage": { "value": 0.98, "unit": "0-1", "source": "NASA PDS Geosciences", "dataset": "LRO Orbital Coverage Index", "resolution": "Regional", "mode": "pre-processed" }
+    }
+  },
+  {
+    "id": "marius-hills",
+    "world": "moon",
+    "name": "Marius Hills",
+    "region": "Oceanus Procellarum",
+    "lat": 14.1,
+    "lon": -56.8,
+    "seededAnalogId": "chagai-taftan",
+    "gravity_g": 0.165,
+    "summary": "Dense cluster of 300+ volcanic domes, basaltic cones, and sinuous rilles with a confirmed skylight pit in western Oceanus Procellarum.",
+    "terrain": {
+      "rock_soil_type": { "value": "basalt", "unit": "class", "source": "NASA PDS / LRO LROC", "dataset": "M3 Volcanic Dome Spectra", "resolution": "140 m", "mode": "pre-processed" },
+      "slope_deg": { "value": 14.8, "unit": "deg", "source": "LRO LOLA via NASA PDS", "dataset": "LOLA Slope Grid", "resolution": "30 m", "mode": "pre-processed" },
+      "roughness_index": { "value": 0.78, "unit": "0-1", "source": "LRO LOLA via NASA PDS", "dataset": "LOLA 100m Baseline Roughness", "resolution": "100 m", "mode": "pre-processed" },
+      "rock_abundance_pct": { "value": 11.2, "unit": "%", "source": "LRO Diviner via NASA PDS", "dataset": "Diviner Rock Abundance", "resolution": "237 m", "mode": "pre-processed" },
+      "crater_boulder_density": { "value": 280, "unit": "boulders/km²", "source": "NASA PDS / LRO LROC", "dataset": "LROC NAC Dome Survey", "resolution": "1.2 m", "mode": "pre-processed" },
+      "elevation_m": { "value": -1520, "unit": "m", "source": "LRO LOLA via NASA PDS", "dataset": "LOLA Gridded Elevation LDEM", "resolution": "237 m", "mode": "pre-processed" },
+      "landforms": { "value": ["volcanic domes", "lava fields", "sinuous rilles", "rocky cones"], "unit": "tags", "source": "NASA PDS / LRO LROC", "dataset": "LROC Volcanic Dome Catalog", "resolution": "1.2 m", "mode": "pre-processed" }
+    },
+    "climate": {
+      "temp_day_c": { "value": 118, "unit": "°C", "source": "LRO Diviner via NASA PDS", "dataset": "Diviner Bolometric Temp", "resolution": "237 m", "mode": "pre-processed" },
+      "temp_night_c": { "value": -168, "unit": "°C", "source": "LRO Diviner via NASA PDS", "dataset": "Diviner Bolometric Temp", "resolution": "237 m", "mode": "pre-processed" },
+      "temp_swing_c": { "value": 286, "unit": "°C", "source": "LRO Diviner via NASA PDS", "dataset": "Diviner Diurnal Amplitude", "resolution": "237 m", "mode": "pre-processed" },
+      "air_pressure_kpa": { "value": 0.0, "unit": "kPa", "source": "NASA PDS / Moon Fact Sheet", "dataset": "Lunar Exosphere Reference", "resolution": "Global", "mode": "pre-processed" },
+      "humidity_pct": { "value": 0.0, "unit": "%", "source": "NASA PDS / Moon Fact Sheet", "dataset": "Lunar Exosphere Reference", "resolution": "Global", "mode": "pre-processed" },
+      "wind_speed_ms": { "value": 0.0, "unit": "m/s", "source": "NASA PDS / Moon Fact Sheet", "dataset": "Vacuum Surface Baseline", "resolution": "Global", "mode": "pre-processed" },
+      "dust_activity_level": { "value": "low", "unit": "tier", "source": "NASA PDS / LRO LADEE", "dataset": "LADEE Exospheric Dust", "resolution": "Orbital", "mode": "pre-processed" },
+      "radiation_proxy": { "value": 0.86, "unit": "0-1", "source": "NASA PDS / LRO CRaTER", "dataset": "CRaTER Dose Model", "resolution": "Orbital", "mode": "pre-processed" }
+    },
+    "resources": {
+      "water_ice_presence": { "value": "none", "unit": "tier", "source": "NASA PDS / LEND", "dataset": "LEND Neutron Flux", "resolution": "5 km", "mode": "pre-processed" },
+      "minerals_for_building_fuel": { "value": ["basalt", "volcanic glass", "ilmenite", "titanium"], "unit": "tags", "source": "NASA PDS / M3", "dataset": "Moon Mineralogy Mapper (M3)", "resolution": "140 m", "mode": "pre-processed" },
+      "sunlight_hours_per_day": { "value": 12.1, "unit": "hrs/day", "source": "NASA PDS / LRO LROC", "dataset": "LROC Solar Illumination Map", "resolution": "60 m", "mode": "pre-processed" }
+    },
+    "operations": {
+      "distance_to_help_km": { "value": 384400, "unit": "km", "source": "Calculated (Earth-Moon mean)", "dataset": "JPL Horizons Ephemeris", "resolution": "Scalar", "mode": "pre-processed" },
+      "comm_delay_s": { "value": 1.3, "unit": "s", "source": "Calculated (light-time one way)", "dataset": "NASA SCaN Link Budget", "resolution": "Scalar", "mode": "pre-processed" },
+      "terrain_visibility": { "value": 0.94, "unit": "0-1", "source": "NASA PDS / LRO LROC", "dataset": "LROC NAC Optical Coverage", "resolution": "1.2 m", "mode": "pre-processed" },
+      "hazard_score": { "value": 0.52, "unit": "0-1", "source": "LRO LOLA via NASA PDS", "dataset": "Dome Slope Hazard", "resolution": "30 m", "mode": "pre-processed" }
+    },
+    "data_quality": {
+      "dataset_resolution_m": { "value": 30, "unit": "m", "source": "NASA PDS Geosciences", "dataset": "LOLA + LROC + GRAIL", "resolution": "1.2-237 m", "mode": "pre-processed" },
+      "coverage": { "value": 0.95, "unit": "0-1", "source": "NASA PDS Geosciences", "dataset": "LRO Coverage Index", "resolution": "Regional", "mode": "pre-processed" }
+    }
+  },
+  {
+    "id": "tranquillitatis-pit",
+    "world": "moon",
+    "name": "Mare Tranquillitatis Pit",
+    "region": "Mare Tranquillitatis",
+    "lat": 8.34,
+    "lon": 33.22,
+    "seededAnalogId": "mount-suswa",
+    "gravity_g": 0.165,
+    "summary": "100 m deep collapsed skylight opening into a thermally stable subterranean basaltic lava tube — top natural lunar base shelter candidate.",
+    "terrain": {
+      "rock_soil_type": { "value": "basalt", "unit": "class", "source": "NASA PDS / LRO LROC", "dataset": "LROC NAC + Mini-RF Radar", "resolution": "0.5 m", "mode": "pre-processed" },
+      "slope_deg": { "value": 13.5, "unit": "deg", "source": "LRO LOLA via NASA PDS", "dataset": "LROC NAC Stereo DTM", "resolution": "2 m", "mode": "pre-processed" },
+      "roughness_index": { "value": 0.70, "unit": "0-1", "source": "LRO LOLA via NASA PDS", "dataset": "LOLA + NAC Rim Roughness", "resolution": "5 m", "mode": "pre-processed" },
+      "rock_abundance_pct": { "value": 13.0, "unit": "%", "source": "LRO Diviner via NASA PDS", "dataset": "Diviner Rock Abundance", "resolution": "237 m", "mode": "pre-processed" },
+      "crater_boulder_density": { "value": 340, "unit": "boulders/km²", "source": "NASA PDS / LRO LROC", "dataset": "LROC Oblique Pit Floor Tally", "resolution": "0.5 m", "mode": "pre-processed" },
+      "elevation_m": { "value": -1910, "unit": "m", "source": "LRO LOLA via NASA PDS", "dataset": "LOLA Gridded Elevation", "resolution": "237 m", "mode": "pre-processed" },
+      "landforms": { "value": ["lava tubes", "skylight pit", "collapse caldera"], "unit": "tags", "source": "NASA PDS / LRO LROC", "dataset": "LROC Oblique Cave Catalog", "resolution": "0.5 m", "mode": "pre-processed" }
+    },
+    "climate": {
+      "temp_day_c": { "value": 19, "unit": "°C", "source": "LRO Diviner via NASA PDS", "dataset": "Diviner Subsurface Cave Equilibrium", "resolution": "Site thermal model", "mode": "pre-processed" },
+      "temp_night_c": { "value": 15, "unit": "°C", "source": "LRO Diviner via NASA PDS", "dataset": "Diviner Subsurface Cave Equilibrium", "resolution": "Site thermal model", "mode": "pre-processed" },
+      "temp_swing_c": { "value": 4, "unit": "°C", "source": "LRO Diviner via NASA PDS", "dataset": "Cave Overhang Thermal Stability", "resolution": "Site model", "mode": "pre-processed" },
+      "air_pressure_kpa": { "value": 0.0, "unit": "kPa", "source": "NASA PDS / Moon Fact Sheet", "dataset": "Lunar Exosphere Reference", "resolution": "Global", "mode": "pre-processed" },
+      "humidity_pct": { "value": 0.0, "unit": "%", "source": "NASA PDS / Moon Fact Sheet", "dataset": "Lunar Exosphere Reference", "resolution": "Global", "mode": "pre-processed" },
+      "wind_speed_ms": { "value": 0.0, "unit": "m/s", "source": "NASA PDS / Moon Fact Sheet", "dataset": "Vacuum Surface Baseline", "resolution": "Global", "mode": "pre-processed" },
+      "dust_activity_level": { "value": "low", "unit": "tier", "source": "NASA PDS / LRO LADEE", "dataset": "Subsurface Protected Zone", "resolution": "Local", "mode": "pre-processed" },
+      "radiation_proxy": { "value": 0.44, "unit": "0-1", "source": "NASA PDS / LRO CRaTER", "dataset": "Overburden Cave Shielding Model", "resolution": "Site model", "mode": "pre-processed" }
+    },
+    "resources": {
+      "water_ice_presence": { "value": "none", "unit": "tier", "source": "NASA PDS / LEND", "dataset": "LEND Neutron Flux", "resolution": "5 km", "mode": "pre-processed" },
+      "minerals_for_building_fuel": { "value": ["basalt", "ilmenite", "sinterable regolith"], "unit": "tags", "source": "NASA PDS / M3", "dataset": "M3 High-Ti Mare Basalt", "resolution": "140 m", "mode": "pre-processed" },
+      "sunlight_hours_per_day": { "value": 11.8, "unit": "hrs/day", "source": "NASA PDS / LRO LROC", "dataset": "Pit Rim Solar Array Horizon", "resolution": "5 m", "mode": "pre-processed" }
+    },
+    "operations": {
+      "distance_to_help_km": { "value": 384400, "unit": "km", "source": "Calculated (Earth-Moon mean)", "dataset": "JPL Horizons Ephemeris", "resolution": "Scalar", "mode": "pre-processed" },
+      "comm_delay_s": { "value": 1.3, "unit": "s", "source": "Calculated (light-time one way)", "dataset": "NASA SCaN Link Budget", "resolution": "Scalar", "mode": "pre-processed" },
+      "terrain_visibility": { "value": 0.72, "unit": "0-1", "source": "NASA PDS / LRO Mini-RF", "dataset": "Oblique Optical + Radar Cave Ingress", "resolution": "0.5 m", "mode": "pre-processed" },
+      "hazard_score": { "value": 0.62, "unit": "0-1", "source": "NASA PDS / LRO LROC", "dataset": "Vertical Cliff Ingress Hazard", "resolution": "2 m", "mode": "pre-processed" }
+    },
+    "data_quality": {
+      "dataset_resolution_m": { "value": 2, "unit": "m", "source": "NASA PDS Geosciences", "dataset": "LROC NAC Stereo + Mini-RF", "resolution": "0.5-2 m", "mode": "pre-processed" },
+      "coverage": { "value": 0.89, "unit": "0-1", "source": "NASA PDS Geosciences", "dataset": "Subsurface Overhang Shadow Mask", "resolution": "Site", "mode": "pre-processed" }
+    }
+  },
+  {
+    "id": "apollo-17",
+    "world": "moon",
+    "name": "Apollo 17 Taurus-Littrow",
+    "region": "Taurus-Littrow Valley",
+    "lat": 20.19,
+    "lon": 30.77,
+    "seededAnalogId": "pinacate",
+    "gravity_g": 0.165,
+    "summary": "Apollo 17 field geology valley combining mare basalt, volcanic cinder craters, and pyroclastic ash — premier Apollo rover training benchmark.",
+    "terrain": {
+      "rock_soil_type": { "value": "volcanic ash", "unit": "class", "source": "NASA PDS / LRO LROC", "dataset": "Apollo 17 Sample + M3 Pyroclastics", "resolution": "0.5 m", "mode": "pre-processed" },
+      "slope_deg": { "value": 11.0, "unit": "deg", "source": "LRO LOLA via NASA PDS", "dataset": "LOLA + NAC Valley Slope", "resolution": "5 m", "mode": "pre-processed" },
+      "roughness_index": { "value": 0.66, "unit": "0-1", "source": "LRO LOLA via NASA PDS", "dataset": "LOLA 100m Baseline Roughness", "resolution": "100 m", "mode": "pre-processed" },
+      "rock_abundance_pct": { "value": 9.8, "unit": "%", "source": "LRO Diviner via NASA PDS", "dataset": "Diviner Rock Abundance", "resolution": "237 m", "mode": "pre-processed" },
+      "crater_boulder_density": { "value": 260, "unit": "boulders/km²", "source": "NASA PDS / LRO LROC", "dataset": "LROC NAC Traverse Map", "resolution": "0.5 m", "mode": "pre-processed" },
+      "elevation_m": { "value": -2450, "unit": "m", "source": "LRO LOLA via NASA PDS", "dataset": "LOLA Gridded Elevation LDEM", "resolution": "237 m", "mode": "pre-processed" },
+      "landforms": { "value": ["volcanic craters", "lava fields", "pyroclastic ash"], "unit": "tags", "source": "NASA PDS / LRO LROC", "dataset": "Apollo 17 Geologic Traverse", "resolution": "0.5 m", "mode": "pre-processed" }
+    },
+    "climate": {
+      "temp_day_c": { "value": 115, "unit": "°C", "source": "LRO Diviner via NASA PDS", "dataset": "Diviner Bolometric Temp", "resolution": "237 m", "mode": "pre-processed" },
+      "temp_night_c": { "value": -170, "unit": "°C", "source": "LRO Diviner via NASA PDS", "dataset": "Diviner Bolometric Temp", "resolution": "237 m", "mode": "pre-processed" },
+      "temp_swing_c": { "value": 285, "unit": "°C", "source": "LRO Diviner via NASA PDS", "dataset": "Diviner Diurnal Amplitude", "resolution": "237 m", "mode": "pre-processed" },
+      "air_pressure_kpa": { "value": 0.0, "unit": "kPa", "source": "NASA PDS / Moon Fact Sheet", "dataset": "Lunar Exosphere Reference", "resolution": "Global", "mode": "pre-processed" },
+      "humidity_pct": { "value": 0.0, "unit": "%", "source": "NASA PDS / Moon Fact Sheet", "dataset": "Lunar Exosphere Reference", "resolution": "Global", "mode": "pre-processed" },
+      "wind_speed_ms": { "value": 0.0, "unit": "m/s", "source": "NASA PDS / Moon Fact Sheet", "dataset": "Vacuum Surface Baseline", "resolution": "Global", "mode": "pre-processed" },
+      "dust_activity_level": { "value": "medium", "unit": "tier", "source": "NASA PDS / Apollo 17", "dataset": "LEAM Electrostatic Dust Experiment", "resolution": "In-situ", "mode": "pre-processed" },
+      "radiation_proxy": { "value": 0.85, "unit": "0-1", "source": "NASA PDS / LRO CRaTER", "dataset": "CRaTER Dose Model", "resolution": "Orbital", "mode": "pre-processed" }
+    },
+    "resources": {
+      "water_ice_presence": { "value": "trace", "unit": "tier", "source": "NASA PDS / M3", "dataset": "Pyroclastic Glass Bead H2O", "resolution": "In-situ + 140 m", "mode": "pre-processed" },
+      "minerals_for_building_fuel": { "value": ["basalt", "volcanic ash", "ilmenite", "pyroclastic beads"], "unit": "tags", "source": "NASA PDS / M3", "dataset": "Apollo 17 Soil & M3 Catalog", "resolution": "140 m", "mode": "pre-processed" },
+      "sunlight_hours_per_day": { "value": 11.6, "unit": "hrs/day", "source": "NASA PDS / LRO LROC", "dataset": "LROC Valley Illumination", "resolution": "60 m", "mode": "pre-processed" }
+    },
+    "operations": {
+      "distance_to_help_km": { "value": 384400, "unit": "km", "source": "Calculated (Earth-Moon mean)", "dataset": "JPL Horizons Ephemeris", "resolution": "Scalar", "mode": "pre-processed" },
+      "comm_delay_s": { "value": 1.3, "unit": "s", "source": "Calculated (light-time one way)", "dataset": "NASA SCaN Link Budget", "resolution": "Scalar", "mode": "pre-processed" },
+      "terrain_visibility": { "value": 0.98, "unit": "0-1", "source": "NASA PDS / LRO LROC", "dataset": "LROC NAC + Apollo Ground Truth", "resolution": "0.5 m", "mode": "pre-processed" },
+      "hazard_score": { "value": 0.46, "unit": "0-1", "source": "NASA PDS / LRO LOLA", "dataset": "Massif Scree Slope Hazard", "resolution": "5 m", "mode": "pre-processed" }
+    },
+    "data_quality": {
+      "dataset_resolution_m": { "value": 5, "unit": "m", "source": "NASA PDS Geosciences", "dataset": "LROC NAC + Apollo Ground Truth", "resolution": "0.5-5 m", "mode": "pre-processed" },
+      "coverage": { "value": 0.99, "unit": "0-1", "source": "NASA PDS Geosciences", "dataset": "Complete Valley Mosaic", "resolution": "Valley", "mode": "pre-processed" }
+    }
+  },
+  {
+    "id": "apollo-15",
+    "world": "moon",
+    "name": "Apollo 15 Hadley-Apennine",
+    "region": "Palus Putredinis / Montes Apenninus",
+    "lat": 26.13,
+    "lon": 3.63,
+    "seededAnalogId": "teide",
+    "gravity_g": 0.165,
+    "summary": "First Lunar Roving Vehicle testbed featuring steep Apennine highland slopes, barren volcanic ground, and the 300 m deep Hadley Rille.",
+    "terrain": {
+      "rock_soil_type": { "value": "basalt", "unit": "class", "source": "NASA PDS / LRO LROC", "dataset": "Apollo 15 Sample + LROC", "resolution": "0.5 m", "mode": "pre-processed" },
+      "slope_deg": { "value": 15.2, "unit": "deg", "source": "LRO LOLA via NASA PDS", "dataset": "LOLA + NAC Highland Slope", "resolution": "5 m", "mode": "pre-processed" },
+      "roughness_index": { "value": 0.80, "unit": "0-1", "source": "LRO LOLA via NASA PDS", "dataset": "LOLA 100m Baseline Roughness", "resolution": "100 m", "mode": "pre-processed" },
+      "rock_abundance_pct": { "value": 12.6, "unit": "%", "source": "LRO Diviner via NASA PDS", "dataset": "Diviner Rock Abundance", "resolution": "237 m", "mode": "pre-processed" },
+      "crater_boulder_density": { "value": 310, "unit": "boulders/km²", "source": "NASA PDS / LRO LROC", "dataset": "Hadley Rille Boulder Tally", "resolution": "0.5 m", "mode": "pre-processed" },
+      "elevation_m": { "value": -1980, "unit": "m", "source": "LRO LOLA via NASA PDS", "dataset": "LOLA Gridded Elevation LDEM", "resolution": "237 m", "mode": "pre-processed" },
+      "landforms": { "value": ["volcanic ground", "lava channel", "highland slope"], "unit": "tags", "source": "NASA PDS / LRO LROC", "dataset": "Hadley Rille Geomorphology", "resolution": "0.5 m", "mode": "pre-processed" }
+    },
+    "climate": {
+      "temp_day_c": { "value": 114, "unit": "°C", "source": "LRO Diviner via NASA PDS", "dataset": "Diviner Bolometric Temp", "resolution": "237 m", "mode": "pre-processed" },
+      "temp_night_c": { "value": -172, "unit": "°C", "source": "LRO Diviner via NASA PDS", "dataset": "Diviner Bolometric Temp", "resolution": "237 m", "mode": "pre-processed" },
+      "temp_swing_c": { "value": 286, "unit": "°C", "source": "LRO Diviner via NASA PDS", "dataset": "Diviner Diurnal Amplitude", "resolution": "237 m", "mode": "pre-processed" },
+      "air_pressure_kpa": { "value": 0.0, "unit": "kPa", "source": "NASA PDS / Moon Fact Sheet", "dataset": "Lunar Exosphere Reference", "resolution": "Global", "mode": "pre-processed" },
+      "humidity_pct": { "value": 0.0, "unit": "%", "source": "NASA PDS / Moon Fact Sheet", "dataset": "Lunar Exosphere Reference", "resolution": "Global", "mode": "pre-processed" },
+      "wind_speed_ms": { "value": 0.0, "unit": "m/s", "source": "NASA PDS / Moon Fact Sheet", "dataset": "Vacuum Surface Baseline", "resolution": "Global", "mode": "pre-processed" },
+      "dust_activity_level": { "value": "low", "unit": "tier", "source": "NASA PDS / LRO LADEE", "dataset": "LADEE Exospheric Dust", "resolution": "Orbital", "mode": "pre-processed" },
+      "radiation_proxy": { "value": 0.87, "unit": "0-1", "source": "NASA PDS / LRO CRaTER", "dataset": "CRaTER Dose Model", "resolution": "Orbital", "mode": "pre-processed" }
+    },
+    "resources": {
+      "water_ice_presence": { "value": "none", "unit": "tier", "source": "NASA PDS / LEND", "dataset": "LEND Neutron Flux", "resolution": "5 km", "mode": "pre-processed" },
+      "minerals_for_building_fuel": { "value": ["basalt", "anorthosite", "plagioclase", "tephra"], "unit": "tags", "source": "NASA PDS / M3", "dataset": "M3 Apennine Spectra", "resolution": "140 m", "mode": "pre-processed" },
+      "sunlight_hours_per_day": { "value": 11.4, "unit": "hrs/day", "source": "NASA PDS / LRO LROC", "dataset": "LROC Solar Illumination Map", "resolution": "60 m", "mode": "pre-processed" }
+    },
+    "operations": {
+      "distance_to_help_km": { "value": 384400, "unit": "km", "source": "Calculated (Earth-Moon mean)", "dataset": "JPL Horizons Ephemeris", "resolution": "Scalar", "mode": "pre-processed" },
+      "comm_delay_s": { "value": 1.3, "unit": "s", "source": "Calculated (light-time one way)", "dataset": "NASA SCaN Link Budget", "resolution": "Scalar", "mode": "pre-processed" },
+      "terrain_visibility": { "value": 0.98, "unit": "0-1", "source": "NASA PDS / LRO LROC", "dataset": "LROC NAC + LRV Ground Truth", "resolution": "0.5 m", "mode": "pre-processed" },
+      "hazard_score": { "value": 0.48, "unit": "0-1", "source": "NASA PDS / LRO LOLA", "dataset": "Hadley Rille Wall Slope", "resolution": "5 m", "mode": "pre-processed" }
+    },
+    "data_quality": {
+      "dataset_resolution_m": { "value": 5, "unit": "m", "source": "NASA PDS Geosciences", "dataset": "LROC NAC + Apollo 15 Archive", "resolution": "0.5-5 m", "mode": "pre-processed" },
+      "coverage": { "value": 0.99, "unit": "0-1", "source": "NASA PDS Geosciences", "dataset": "Full Traverse Coverage", "resolution": "Regional", "mode": "pre-processed" }
+    }
+  },
+  {
+    "id": "shackleton-crater",
+    "world": "moon",
+    "name": "Shackleton Crater",
+    "region": "Lunar South Pole (Artemis Zone)",
+    "lat": -89.9,
+    "lon": 0.0,
+    "seededAnalogId": "teide",
+    "gravity_g": 0.165,
+    "summary": "21 km South Pole crater combining near-perpetually sunlit rim ridges for solar power and cryogenic ice-bearing permanently shadowed floors.",
+    "terrain": {
+      "rock_soil_type": { "value": "anorthosite", "unit": "class", "source": "NASA PDS / LRO LROC", "dataset": "Kaguya + M3 Polar Highland", "resolution": "140 m", "mode": "pre-processed" },
+      "slope_deg": { "value": 28.5, "unit": "deg", "source": "LRO LOLA via NASA PDS", "dataset": "LOLA Polar 5m Slope", "resolution": "5 m", "mode": "pre-processed" },
+      "roughness_index": { "value": 0.86, "unit": "0-1", "source": "LRO LOLA via NASA PDS", "dataset": "LOLA 5m Polar Roughness", "resolution": "5 m", "mode": "pre-processed" },
+      "rock_abundance_pct": { "value": 16.2, "unit": "%", "source": "LRO Diviner via NASA PDS", "dataset": "Diviner Polar Rock Abundance", "resolution": "237 m", "mode": "pre-processed" },
+      "crater_boulder_density": { "value": null, "unit": "boulders/km²", "source": "TODO real value (ShadowCam PSR boulder tally)", "dataset": "ShadowCam PSR Pending", "resolution": "1.7 m", "mode": "pre-processed" },
+      "elevation_m": { "value": -4200, "unit": "m", "source": "LRO LOLA via NASA PDS", "dataset": "LOLA Polar Stereographic DEM", "resolution": "5 m", "mode": "pre-processed" },
+      "landforms": { "value": ["impact crater", "polar rim", "shadowed floor"], "unit": "tags", "source": "NASA PDS / LRO LOLA", "dataset": "LOLA Polar Crater Morphometry", "resolution": "5 m", "mode": "pre-processed" }
+    },
+    "climate": {
+      "temp_day_c": { "value": -183, "unit": "°C", "source": "LRO Diviner via NASA PDS", "dataset": "Diviner Channel 7-9 PSR Peak", "resolution": "237 m", "mode": "pre-processed" },
+      "temp_night_c": { "value": -233, "unit": "°C", "source": "LRO Diviner via NASA PDS", "dataset": "Diviner Channel 9 PSR Min", "resolution": "237 m", "mode": "pre-processed" },
+      "temp_swing_c": { "value": 50, "unit": "°C", "source": "LRO Diviner via NASA PDS", "dataset": "Diviner Polar PSR Swing", "resolution": "237 m", "mode": "pre-processed" },
+      "air_pressure_kpa": { "value": 0.0, "unit": "kPa", "source": "NASA PDS / Moon Fact Sheet", "dataset": "Lunar Exosphere Reference", "resolution": "Global", "mode": "pre-processed" },
+      "humidity_pct": { "value": 0.0, "unit": "%", "source": "NASA PDS / Moon Fact Sheet", "dataset": "Lunar Exosphere Reference", "resolution": "Global", "mode": "pre-processed" },
+      "wind_speed_ms": { "value": 0.0, "unit": "m/s", "source": "NASA PDS / Moon Fact Sheet", "dataset": "Vacuum Surface Baseline", "resolution": "Global", "mode": "pre-processed" },
+      "dust_activity_level": { "value": "low", "unit": "tier", "source": "NASA PDS / LRO LADEE", "dataset": "Polar Horizon Levitation Model", "resolution": "Regional", "mode": "pre-processed" },
+      "radiation_proxy": { "value": 0.80, "unit": "0-1", "source": "NASA PDS / LRO CRaTER", "dataset": "CRaTER Polar Track Flux", "resolution": "Orbital", "mode": "pre-processed" }
+    },
+    "resources": {
+      "water_ice_presence": { "value": "confirmed", "unit": "tier", "source": "NASA PDS / LEND + M3", "dataset": "M3 NIR Water-Ice + LEND Hydrogen", "resolution": "280 m", "mode": "pre-processed" },
+      "minerals_for_building_fuel": { "value": ["water ice", "anorthosite", "plagioclase"], "unit": "tags", "source": "NASA PDS / M3", "dataset": "LRO + Chandrayaan-1 M3", "resolution": "280 m", "mode": "pre-processed" },
+      "sunlight_hours_per_day": { "value": 20.6, "unit": "hrs/day", "source": "NASA PDS / LRO LROC", "dataset": "Shackleton Rim Connecting Ridge (86% sunlit)", "resolution": "5 m", "mode": "pre-processed" }
+    },
+    "operations": {
+      "distance_to_help_km": { "value": 384400, "unit": "km", "source": "Calculated (Earth-Moon mean)", "dataset": "JPL Horizons Ephemeris", "resolution": "Scalar", "mode": "pre-processed" },
+      "comm_delay_s": { "value": 1.3, "unit": "s", "source": "Calculated (light-time one way)", "dataset": "NASA SCaN Link Budget", "resolution": "Scalar", "mode": "pre-processed" },
+      "terrain_visibility": { "value": 0.62, "unit": "0-1", "source": "NASA PDS / LOLA + ShadowCam", "dataset": "PSR Optical Shadowing Limits", "resolution": "5 m", "mode": "pre-processed" },
+      "hazard_score": { "value": 0.88, "unit": "0-1", "source": "NASA PDS / LRO LOLA", "dataset": "Extreme Cold + 28.5° Slope Hazard", "resolution": "5 m", "mode": "pre-processed" }
+    },
+    "data_quality": {
+      "dataset_resolution_m": { "value": 5, "unit": "m", "source": "NASA PDS Geosciences", "dataset": "LOLA Polar 5m DEM", "resolution": "5 m", "mode": "pre-processed" },
+      "coverage": { "value": 0.84, "unit": "0-1", "source": "NASA PDS Geosciences", "dataset": "PSR Optical Gaps", "resolution": "Polar", "mode": "pre-processed" }
+    }
+  }
+]

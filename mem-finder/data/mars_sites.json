@@ -1,0 +1,227 @@
+[
+  {
+    "id": "acidalia-planitia",
+    "world": "mars",
+    "name": "Acidalia Planitia",
+    "region": "Northern Lowlands",
+    "lat": 40.0,
+    "lon": -30.0,
+    "seededAnalogId": "hingol",
+    "gravity_g": 0.379,
+    "summary": "Vast northern lowland plain containing thousands of sedimentary mud-volcano cones and wind-carved badland ridges.",
+    "terrain": {
+      "rock_soil_type": { "value": "mudstone badlands", "unit": "class", "source": "NASA PDS / MRO HiRISE", "dataset": "HiRISE Pitted Cone Survey", "resolution": "0.25 m", "mode": "pre-processed" },
+      "slope_deg": { "value": 8.6, "unit": "deg", "source": "MGS MOLA via NASA PDS", "dataset": "MOLA Slope Baseline", "resolution": "463 m", "mode": "pre-processed" },
+      "roughness_index": { "value": 0.56, "unit": "0-1", "source": "MGS MOLA via NASA PDS", "dataset": "MOLA Pulse-Width Roughness", "resolution": "463 m", "mode": "pre-processed" },
+      "rock_abundance_pct": { "value": 12.0, "unit": "%", "source": "MGS TES via NASA PDS", "dataset": "TES Thermal Inertia Rock Fraction", "resolution": "3 km", "mode": "pre-processed" },
+      "crater_boulder_density": { "value": 180, "unit": "boulders/km²", "source": "NASA PDS / MRO HiRISE", "dataset": "HiRISE Automated Boulder Tally", "resolution": "0.25 m", "mode": "pre-processed" },
+      "elevation_m": { "value": -4420, "unit": "m", "source": "MGS MOLA via NASA PDS", "dataset": "MOLA MEGDR 128ppd", "resolution": "463 m", "mode": "pre-processed" },
+      "landforms": { "value": ["mud volcanoes", "wind-carved badlands", "polygonal plains"], "unit": "tags", "source": "NASA PDS / MRO CTX", "dataset": "CTX Northern Plains Morphometry", "resolution": "6 m", "mode": "pre-processed" }
+    },
+    "climate": {
+      "temp_day_c": { "value": -12, "unit": "°C", "source": "MGS TES via NASA PDS", "dataset": "TES Surface Brightness Temp", "resolution": "3 km", "mode": "pre-processed" },
+      "temp_night_c": { "value": -95, "unit": "°C", "source": "MGS TES via NASA PDS", "dataset": "TES Surface Brightness Temp", "resolution": "3 km", "mode": "pre-processed" },
+      "temp_swing_c": { "value": 83, "unit": "°C", "source": "MGS TES via NASA PDS", "dataset": "TES Diurnal Swing", "resolution": "3 km", "mode": "pre-processed" },
+      "air_pressure_kpa": { "value": 0.82, "unit": "kPa", "source": "NASA PDS / MGS MOLA", "dataset": "MOLA Datum Atmospheric Pressure", "resolution": "463 m", "mode": "pre-processed" },
+      "humidity_pct": { "value": 1.2, "unit": "%", "source": "NASA PDS Atmospheres", "dataset": "Mars Climate Database / TES", "resolution": "Regional", "mode": "pre-processed" },
+      "wind_speed_ms": { "value": 7.4, "unit": "m/s", "source": "NASA PDS / Viking + MCD", "dataset": "Mars Mesoscale Wind Model", "resolution": "Regional", "mode": "pre-processed" },
+      "dust_activity_level": { "value": "high", "unit": "tier", "source": "NASA PDS / MGS TES", "dataset": "TES Dust Cover Index", "resolution": "3 km", "mode": "pre-processed" },
+      "radiation_proxy": { "value": 0.68, "unit": "0-1", "source": "NASA PDS / MSL RAD", "dataset": "RAD Scaled to MOLA Column", "resolution": "Basin model", "mode": "pre-processed" }
+    },
+    "resources": {
+      "water_ice_presence": { "value": "likely", "unit": "tier", "source": "NASA PDS / Odyssey GRS", "dataset": "GRS Subsurface Hydrogen", "resolution": "500 km", "mode": "pre-processed" },
+      "minerals_for_building_fuel": { "value": ["phyllosilicate clay", "silt", "subsurface ice"], "unit": "tags", "source": "NASA PDS / MRO CRISM", "dataset": "CRISM Mineralogy", "resolution": "18 m", "mode": "pre-processed" },
+      "sunlight_hours_per_day": { "value": 11.4, "unit": "hrs/day", "source": "NASA PDS", "dataset": "Mars Sol Insolation Model (40°N)", "resolution": "Regional", "mode": "pre-processed" }
+    },
+    "operations": {
+      "distance_to_help_km": { "value": 225000000, "unit": "km", "source": "Calculated (Earth-Mars mean)", "dataset": "JPL Horizons Ephemeris", "resolution": "Scalar", "mode": "pre-processed" },
+      "comm_delay_s": { "value": 750, "unit": "s", "source": "Calculated (4-24 min one way)", "dataset": "NASA Deep Space Network Link", "resolution": "Scalar", "mode": "pre-processed" },
+      "terrain_visibility": { "value": 0.86, "unit": "0-1", "source": "NASA PDS / MRO CTX", "dataset": "CTX + HiRISE Coverage", "resolution": "6 m", "mode": "pre-processed" },
+      "hazard_score": { "value": 0.48, "unit": "0-1", "source": "NASA PDS / MOLA", "dataset": "Slope + Dust Opacity Hazard", "resolution": "463 m", "mode": "pre-processed" }
+    },
+    "data_quality": {
+      "dataset_resolution_m": { "value": 6, "unit": "m", "source": "NASA PDS Geosciences", "dataset": "MRO CTX + MOLA", "resolution": "0.25-463 m", "mode": "pre-processed" },
+      "coverage": { "value": 0.90, "unit": "0-1", "source": "NASA PDS Geosciences", "dataset": "Regional Mapping Coverage", "resolution": "Regional", "mode": "pre-processed" }
+    }
+  },
+  {
+    "id": "gale-crater",
+    "world": "mars",
+    "name": "Gale Crater",
+    "region": "Aeolis Quadrangle",
+    "lat": -5.4,
+    "lon": 137.8,
+    "seededAnalogId": "kharan-desert",
+    "gravity_g": 0.379,
+    "summary": "Dry, dusty, rocky fluvial-lacustrine basin with ventifact gravel flats and Aeolis Mons layered strata — explored by NASA Curiosity.",
+    "terrain": {
+      "rock_soil_type": { "value": "iron-rich dust", "unit": "class", "source": "NASA PDS / MSL CheMin", "dataset": "Curiosity APXS & Mastcam", "resolution": "In-situ", "mode": "pre-processed" },
+      "slope_deg": { "value": 5.2, "unit": "deg", "source": "MGS MOLA via NASA PDS", "dataset": "HiRISE + MOLA Traverse Slope", "resolution": "1 m", "mode": "pre-processed" },
+      "roughness_index": { "value": 0.62, "unit": "0-1", "source": "MGS MOLA via NASA PDS", "dataset": "MOLA + HiRISE Roughness", "resolution": "1 m", "mode": "pre-processed" },
+      "rock_abundance_pct": { "value": 18.4, "unit": "%", "source": "NASA PDS / MRO HiRISE", "dataset": "MSL Bradbury-Aeolis Rock Density", "resolution": "0.25 m", "mode": "pre-processed" },
+      "crater_boulder_density": { "value": 310, "unit": "boulders/km²", "source": "NASA PDS / MRO HiRISE", "dataset": "HiRISE Safe-Landing Survey", "resolution": "0.25 m", "mode": "pre-processed" },
+      "elevation_m": { "value": -4500, "unit": "m", "source": "MGS MOLA via NASA PDS", "dataset": "MOLA MEGDR 128ppd", "resolution": "463 m", "mode": "pre-processed" },
+      "landforms": { "value": ["gravel flats", "alluvial fans", "rocky basin", "sand sheets"], "unit": "tags", "source": "NASA PDS / MRO HiRISE", "dataset": "Gale Geomorphologic Map", "resolution": "0.25 m", "mode": "pre-processed" }
+    },
+    "climate": {
+      "temp_day_c": { "value": 0, "unit": "°C", "source": "NASA PDS Atmospheres", "dataset": "MSL REMS Ground Sensor", "resolution": "In-situ", "mode": "pre-processed" },
+      "temp_night_c": { "value": -90, "unit": "°C", "source": "NASA PDS Atmospheres", "dataset": "MSL REMS Ground Sensor", "resolution": "In-situ", "mode": "pre-processed" },
+      "temp_swing_c": { "value": 90, "unit": "°C", "source": "NASA PDS Atmospheres", "dataset": "MSL REMS Diurnal Swing", "resolution": "In-situ", "mode": "pre-processed" },
+      "air_pressure_kpa": { "value": 0.84, "unit": "kPa", "source": "NASA PDS Atmospheres", "dataset": "MSL REMS Barometer", "resolution": "In-situ", "mode": "pre-processed" },
+      "humidity_pct": { "value": 2.1, "unit": "%", "source": "NASA PDS Atmospheres", "dataset": "MSL REMS Relative Humidity", "resolution": "In-situ", "mode": "pre-processed" },
+      "wind_speed_ms": { "value": 6.8, "unit": "m/s", "source": "NASA PDS Atmospheres", "dataset": "MSL REMS Wind Boom", "resolution": "In-situ", "mode": "pre-processed" },
+      "dust_activity_level": { "value": "high", "unit": "tier", "source": "NASA PDS Atmospheres", "dataset": "MSL Mastcam Tau + TES Dust", "resolution": "In-situ", "mode": "pre-processed" },
+      "radiation_proxy": { "value": 0.74, "unit": "0-1", "source": "NASA PDS / MSL RAD", "dataset": "RAD Surface Radiation Dose", "resolution": "In-situ", "mode": "pre-processed" }
+    },
+    "resources": {
+      "water_ice_presence": { "value": "trace", "unit": "tier", "source": "NASA PDS / MSL DAN", "dataset": "DAN Neutron Hydrated Clays", "resolution": "In-situ", "mode": "pre-processed" },
+      "minerals_for_building_fuel": { "value": ["iron oxide", "hydrated clay", "basalt sand", "sulfate"], "unit": "tags", "source": "NASA PDS / MSL CheMin", "dataset": "CheMin XRD Mineralogy", "resolution": "In-situ", "mode": "pre-processed" },
+      "sunlight_hours_per_day": { "value": 12.1, "unit": "hrs/day", "source": "NASA PDS", "dataset": "Mars Sol Insolation (5°S)", "resolution": "Site", "mode": "pre-processed" }
+    },
+    "operations": {
+      "distance_to_help_km": { "value": 225000000, "unit": "km", "source": "Calculated (Earth-Mars mean)", "dataset": "JPL Horizons Ephemeris", "resolution": "Scalar", "mode": "pre-processed" },
+      "comm_delay_s": { "value": 750, "unit": "s", "source": "Calculated (4-24 min one way)", "dataset": "NASA Deep Space Network Link", "resolution": "Scalar", "mode": "pre-processed" },
+      "terrain_visibility": { "value": 0.98, "unit": "0-1", "source": "NASA PDS / MRO HiRISE", "dataset": "HiRISE + Rover Stereo", "resolution": "0.25 m", "mode": "pre-processed" },
+      "hazard_score": { "value": 0.44, "unit": "0-1", "source": "NASA PDS / MSL", "dataset": "Wheel-Wear Ventifact Hazard", "resolution": "0.25 m", "mode": "pre-processed" }
+    },
+    "data_quality": {
+      "dataset_resolution_m": { "value": 0.25, "unit": "m", "source": "NASA PDS Geosciences", "dataset": "HiRISE + MSL In-Situ", "resolution": "0.25 m", "mode": "pre-processed" },
+      "coverage": { "value": 0.98, "unit": "0-1", "source": "NASA PDS Geosciences", "dataset": "Full Ellipse Coverage", "resolution": "Site", "mode": "pre-processed" }
+    }
+  },
+  {
+    "id": "medusae-fossae",
+    "world": "mars",
+    "name": "Medusae Fossae",
+    "region": "Equatorial Transition Zone",
+    "lat": -3.0,
+    "lon": 160.0,
+    "seededAnalogId": "dasht-e-lut",
+    "gravity_g": 0.379,
+    "summary": "Mars's largest equatorial dust reservoir — sculpted into wind-carved yardang ridges under extreme diurnal surface heating.",
+    "terrain": {
+      "rock_soil_type": { "value": "volcanic ash", "unit": "class", "source": "NASA PDS / MRO SHARAD", "dataset": "Friable Ignimbrite & Aeolian Ash", "resolution": "6 m", "mode": "pre-processed" },
+      "slope_deg": { "value": 8.4, "unit": "deg", "source": "MGS MOLA via NASA PDS", "dataset": "MOLA Yardang Slope", "resolution": "463 m", "mode": "pre-processed" },
+      "roughness_index": { "value": 0.68, "unit": "0-1", "source": "MGS MOLA via NASA PDS", "dataset": "MOLA Pulse-Width Roughness", "resolution": "463 m", "mode": "pre-processed" },
+      "rock_abundance_pct": { "value": 6.5, "unit": "%", "source": "MGS TES via NASA PDS", "dataset": "TES Low Thermal Inertia Dust", "resolution": "3 km", "mode": "pre-processed" },
+      "crater_boulder_density": { "value": 95, "unit": "boulders/km²", "source": "NASA PDS / MRO HiRISE", "dataset": "HiRISE Yardang Survey", "resolution": "0.25 m", "mode": "pre-processed" },
+      "elevation_m": { "value": -1200, "unit": "m", "source": "MGS MOLA via NASA PDS", "dataset": "MOLA MEGDR 128ppd", "resolution": "463 m", "mode": "pre-processed" },
+      "landforms": { "value": ["yardangs", "wind-carved formations", "dunes"], "unit": "tags", "source": "NASA PDS / MRO CTX", "dataset": "CTX Yardang Morphometry", "resolution": "6 m", "mode": "pre-processed" }
+    },
+    "climate": {
+      "temp_day_c": { "value": 20, "unit": "°C", "source": "MGS TES via NASA PDS", "dataset": "TES Daytime Peak", "resolution": "3 km", "mode": "pre-processed" },
+      "temp_night_c": { "value": -102, "unit": "°C", "source": "MGS TES via NASA PDS", "dataset": "TES Nighttime Low", "resolution": "3 km", "mode": "pre-processed" },
+      "temp_swing_c": { "value": 122, "unit": "°C", "source": "MGS TES via NASA PDS", "dataset": "TES Equatorial Diurnal Swing", "resolution": "3 km", "mode": "pre-processed" },
+      "air_pressure_kpa": { "value": 0.68, "unit": "kPa", "source": "NASA PDS / MGS MOLA", "dataset": "MOLA Datum Atmospheric Pressure", "resolution": "463 m", "mode": "pre-processed" },
+      "humidity_pct": { "value": 0.4, "unit": "%", "source": "NASA PDS Atmospheres", "dataset": "TES Water Vapor Column", "resolution": "3 km", "mode": "pre-processed" },
+      "wind_speed_ms": { "value": 11.2, "unit": "m/s", "source": "NASA PDS / Mars Climate DB", "dataset": "Aeolian Yardang Wind Shear", "resolution": "Regional", "mode": "pre-processed" },
+      "dust_activity_level": { "value": "high", "unit": "tier", "source": "NASA PDS / MGS TES", "dataset": "TES Global Dust Reservoir", "resolution": "3 km", "mode": "pre-processed" },
+      "radiation_proxy": { "value": 0.84, "unit": "0-1", "source": "NASA PDS / MSL RAD", "dataset": "Equatorial Altitude UV Proxy", "resolution": "Regional", "mode": "pre-processed" }
+    },
+    "resources": {
+      "water_ice_presence": { "value": "likely", "unit": "tier", "source": "NASA PDS / MRO SHARAD", "dataset": "SHARAD Low-Dielectric Deposits", "resolution": "15 m vertical", "mode": "pre-processed" },
+      "minerals_for_building_fuel": { "value": ["volcanic ash", "silica dust", "buried ice"], "unit": "tags", "source": "NASA PDS / OMEGA", "dataset": "OMEGA + CRISM", "resolution": "300 m", "mode": "pre-processed" },
+      "sunlight_hours_per_day": { "value": 12.3, "unit": "hrs/day", "source": "NASA PDS", "dataset": "Mars Equatorial Insolation", "resolution": "Regional", "mode": "pre-processed" }
+    },
+    "operations": {
+      "distance_to_help_km": { "value": 225000000, "unit": "km", "source": "Calculated (Earth-Mars mean)", "dataset": "JPL Horizons Ephemeris", "resolution": "Scalar", "mode": "pre-processed" },
+      "comm_delay_s": { "value": 750, "unit": "s", "source": "Calculated (4-24 min one way)", "dataset": "NASA Deep Space Network Link", "resolution": "Scalar", "mode": "pre-processed" },
+      "terrain_visibility": { "value": 0.78, "unit": "0-1", "source": "NASA PDS / MRO CTX", "dataset": "Dust-Veiled Optical + SHARAD", "resolution": "6 m", "mode": "pre-processed" },
+      "hazard_score": { "value": 0.74, "unit": "0-1", "source": "NASA PDS / MGS TES", "dataset": "Low-Bearing Dust Sink Hazard", "resolution": "3 km", "mode": "pre-processed" }
+    },
+    "data_quality": {
+      "dataset_resolution_m": { "value": 6, "unit": "m", "source": "NASA PDS Geosciences", "dataset": "MRO CTX + SHARAD", "resolution": "6 m", "mode": "pre-processed" },
+      "coverage": { "value": 0.86, "unit": "0-1", "source": "NASA PDS Geosciences", "dataset": "Regional Coverage", "resolution": "Regional", "mode": "pre-processed" }
+    }
+  },
+  {
+    "id": "meridiani-planum",
+    "world": "mars",
+    "name": "Meridiani Planum",
+    "region": "Arabia Quadrangle",
+    "lat": -1.95,
+    "lon": -5.5,
+    "seededAnalogId": "qaidam-basin",
+    "gravity_g": 0.379,
+    "summary": "High-elevation evaporitic sulfate salt basin with wind-carved ridges and ferric concretions explored by NASA Opportunity.",
+    "terrain": {
+      "rock_soil_type": { "value": "evaporite salt", "unit": "class", "source": "NASA PDS / MRO CRISM", "dataset": "CRISM + Opportunity APXS Sulfate", "resolution": "18 m", "mode": "pre-processed" },
+      "slope_deg": { "value": 2.8, "unit": "deg", "source": "MGS MOLA via NASA PDS", "dataset": "MOLA Flat Playa Slope", "resolution": "463 m", "mode": "pre-processed" },
+      "roughness_index": { "value": 0.34, "unit": "0-1", "source": "MGS MOLA via NASA PDS", "dataset": "MOLA Pulse-Width Roughness", "resolution": "463 m", "mode": "pre-processed" },
+      "rock_abundance_pct": { "value": 8.0, "unit": "%", "source": "MGS TES via NASA PDS", "dataset": "TES Rock Abundance", "resolution": "3 km", "mode": "pre-processed" },
+      "crater_boulder_density": { "value": 120, "unit": "boulders/km²", "source": "NASA PDS / MRO HiRISE", "dataset": "HiRISE Opportunity Traverse", "resolution": "0.25 m", "mode": "pre-processed" },
+      "elevation_m": { "value": -1450, "unit": "m", "source": "MGS MOLA via NASA PDS", "dataset": "MOLA MEGDR 128ppd", "resolution": "463 m", "mode": "pre-processed" },
+      "landforms": { "value": ["salt basin", "wind-carved ridges", "dunes"], "unit": "tags", "source": "NASA PDS / MRO HiRISE", "dataset": "Meridiani Aeolian Ripple Map", "resolution": "0.25 m", "mode": "pre-processed" }
+    },
+    "climate": {
+      "temp_day_c": { "value": -5, "unit": "°C", "source": "NASA PDS Atmospheres", "dataset": "Opportunity Mini-TES", "resolution": "In-situ", "mode": "pre-processed" },
+      "temp_night_c": { "value": -96, "unit": "°C", "source": "NASA PDS Atmospheres", "dataset": "Opportunity Mini-TES", "resolution": "In-situ", "mode": "pre-processed" },
+      "temp_swing_c": { "value": 91, "unit": "°C", "source": "NASA PDS Atmospheres", "dataset": "Mini-TES Diurnal Swing", "resolution": "In-situ", "mode": "pre-processed" },
+      "air_pressure_kpa": { "value": 0.70, "unit": "kPa", "source": "NASA PDS / MGS MOLA", "dataset": "MOLA Datum Atmospheric Pressure", "resolution": "463 m", "mode": "pre-processed" },
+      "humidity_pct": { "value": 1.1, "unit": "%", "source": "NASA PDS Atmospheres", "dataset": "Mars Climate Database", "resolution": "Regional", "mode": "pre-processed" },
+      "wind_speed_ms": { "value": 6.4, "unit": "m/s", "source": "NASA PDS / Mars Climate DB", "dataset": "Equatorial Trade Winds", "resolution": "Regional", "mode": "pre-processed" },
+      "dust_activity_level": { "value": "medium", "unit": "tier", "source": "NASA PDS / MER-B", "dataset": "Opportunity Pancam Tau", "resolution": "In-situ", "mode": "pre-processed" },
+      "radiation_proxy": { "value": 0.78, "unit": "0-1", "source": "NASA PDS / MSL RAD", "dataset": "RAD Altitude-Adjusted Model", "resolution": "Regional", "mode": "pre-processed" }
+    },
+    "resources": {
+      "water_ice_presence": { "value": "trace", "unit": "tier", "source": "NASA PDS / MRO CRISM", "dataset": "Hydrated Mg-Sulfate Jarosite", "resolution": "18 m", "mode": "pre-processed" },
+      "minerals_for_building_fuel": { "value": ["evaporite salt", "magnesium sulfate", "hematite", "gypsum"], "unit": "tags", "source": "NASA PDS / MRO CRISM", "dataset": "CRISM + Opportunity Mössbauer", "resolution": "18 m", "mode": "pre-processed" },
+      "sunlight_hours_per_day": { "value": 12.2, "unit": "hrs/day", "source": "NASA PDS", "dataset": "MER-B Solar Array Telemetry", "resolution": "In-situ", "mode": "pre-processed" }
+    },
+    "operations": {
+      "distance_to_help_km": { "value": 225000000, "unit": "km", "source": "Calculated (Earth-Mars mean)", "dataset": "JPL Horizons Ephemeris", "resolution": "Scalar", "mode": "pre-processed" },
+      "comm_delay_s": { "value": 750, "unit": "s", "source": "Calculated (4-24 min one way)", "dataset": "NASA Deep Space Network Link", "resolution": "Scalar", "mode": "pre-processed" },
+      "terrain_visibility": { "value": 0.96, "unit": "0-1", "source": "NASA PDS / MRO HiRISE", "dataset": "HiRISE + MER-B Panorama", "resolution": "0.25 m", "mode": "pre-processed" },
+      "hazard_score": { "value": 0.36, "unit": "0-1", "source": "NASA PDS / MER-B", "dataset": "Purgatory Dune Slip Log", "resolution": "0.25 m", "mode": "pre-processed" }
+    },
+    "data_quality": {
+      "dataset_resolution_m": { "value": 0.25, "unit": "m", "source": "NASA PDS Geosciences", "dataset": "HiRISE + Opportunity In-Situ", "resolution": "0.25 m", "mode": "pre-processed" },
+      "coverage": { "value": 0.96, "unit": "0-1", "source": "NASA PDS Geosciences", "dataset": "Traverse Coverage", "resolution": "Site", "mode": "pre-processed" }
+    }
+  },
+  {
+    "id": "nili-fossae",
+    "world": "mars",
+    "name": "Nili Fossae / Jezero",
+    "region": "Isidis Basin Rim",
+    "lat": 21.0,
+    "lon": 74.5,
+    "seededAnalogId": "samail-ophiolite",
+    "gravity_g": 0.379,
+    "summary": "Exposed deep-crustal ultramafic olivine, serpentine, and carbonate veins bordering Jezero Crater — Earth-mantle mineral carbonation target.",
+    "terrain": {
+      "rock_soil_type": { "value": "ultramafic", "unit": "class", "source": "NASA PDS / MRO CRISM", "dataset": "CRISM Olivine-Carbonate Map", "resolution": "18 m", "mode": "pre-processed" },
+      "slope_deg": { "value": 12.4, "unit": "deg", "source": "MGS MOLA via NASA PDS", "dataset": "HiRISE + MOLA Graben Slope", "resolution": "1 m", "mode": "pre-processed" },
+      "roughness_index": { "value": 0.64, "unit": "0-1", "source": "MGS MOLA via NASA PDS", "dataset": "MOLA + HiRISE Roughness", "resolution": "1 m", "mode": "pre-processed" },
+      "rock_abundance_pct": { "value": 21.5, "unit": "%", "source": "MGS TES via NASA PDS", "dataset": "TES High Thermal Inertia Bedrock", "resolution": "3 km", "mode": "pre-processed" },
+      "crater_boulder_density": { "value": 360, "unit": "boulders/km²", "source": "NASA PDS / MRO HiRISE", "dataset": "Perseverance Safe-Zone Map", "resolution": "0.25 m", "mode": "pre-processed" },
+      "elevation_m": { "value": -2300, "unit": "m", "source": "MGS MOLA via NASA PDS", "dataset": "MOLA MEGDR 128ppd", "resolution": "463 m", "mode": "pre-processed" },
+      "landforms": { "value": ["canyons", "fractured bedrock", "graben valleys"], "unit": "tags", "source": "NASA PDS / MRO HiRISE", "dataset": "Nili Fossae Fracture Map", "resolution": "0.25 m", "mode": "pre-processed" }
+    },
+    "climate": {
+      "temp_day_c": { "value": -10, "unit": "°C", "source": "NASA PDS Atmospheres", "dataset": "Mars 2020 MEDA / TES", "resolution": "In-situ", "mode": "pre-processed" },
+      "temp_night_c": { "value": -85, "unit": "°C", "source": "NASA PDS Atmospheres", "dataset": "Mars 2020 MEDA / TES", "resolution": "In-situ", "mode": "pre-processed" },
+      "temp_swing_c": { "value": 75, "unit": "°C", "source": "NASA PDS Atmospheres", "dataset": "MEDA Diurnal Swing", "resolution": "In-situ", "mode": "pre-processed" },
+      "air_pressure_kpa": { "value": 0.74, "unit": "kPa", "source": "NASA PDS Atmospheres", "dataset": "Mars 2020 MEDA Pressure", "resolution": "In-situ", "mode": "pre-processed" },
+      "humidity_pct": { "value": 1.6, "unit": "%", "source": "NASA PDS Atmospheres", "dataset": "Mars 2020 MEDA Humidity", "resolution": "In-situ", "mode": "pre-processed" },
+      "wind_speed_ms": { "value": 5.9, "unit": "m/s", "source": "NASA PDS Atmospheres", "dataset": "Mars 2020 MEDA Wind", "resolution": "In-situ", "mode": "pre-processed" },
+      "dust_activity_level": { "value": "medium", "unit": "tier", "source": "NASA PDS / MGS TES", "dataset": "TES Dust Cover Index", "resolution": "3 km", "mode": "pre-processed" },
+      "radiation_proxy": { "value": 0.77, "unit": "0-1", "source": "NASA PDS / MSL RAD", "dataset": "RAD Altitude-Adjusted Model", "resolution": "Regional", "mode": "pre-processed" }
+    },
+    "resources": {
+      "water_ice_presence": { "value": "trace", "unit": "tier", "source": "NASA PDS / MRO CRISM", "dataset": "Hydrated Serpentine & Smectites", "resolution": "18 m", "mode": "pre-processed" },
+      "minerals_for_building_fuel": { "value": ["olivine", "serpentine", "magnesium carbonate", "phyllosilicate"], "unit": "tags", "source": "NASA PDS / MRO CRISM", "dataset": "CRISM + Perseverance SHERLOC", "resolution": "18 m", "mode": "pre-processed" },
+      "sunlight_hours_per_day": { "value": 11.9, "unit": "hrs/day", "source": "NASA PDS", "dataset": "Mars Sol Insolation (21°N)", "resolution": "Site", "mode": "pre-processed" }
+    },
+    "operations": {
+      "distance_to_help_km": { "value": 225000000, "unit": "km", "source": "Calculated (Earth-Mars mean)", "dataset": "JPL Horizons Ephemeris", "resolution": "Scalar", "mode": "pre-processed" },
+      "comm_delay_s": { "value": 750, "unit": "s", "source": "Calculated (4-24 min one way)", "dataset": "NASA Deep Space Network Link", "resolution": "Scalar", "mode": "pre-processed" },
+      "terrain_visibility": { "value": 0.97, "unit": "0-1", "source": "NASA PDS / MRO HiRISE", "dataset": "HiRISE + Ingenuity Recon", "resolution": "0.25 m", "mode": "pre-processed" },
+      "hazard_score": { "value": 0.46, "unit": "0-1", "source": "NASA PDS / MRO HiRISE", "dataset": "Perseverance Hazard Avoidance Mask", "resolution": "0.25 m", "mode": "pre-processed" }
+    },
+    "data_quality": {
+      "dataset_resolution_m": { "value": 0.25, "unit": "m", "source": "NASA PDS Geosciences", "dataset": "HiRISE + CRISM + Mars 2020", "resolution": "0.25 m", "mode": "pre-processed" },
+      "coverage": { "value": 0.99, "unit": "0-1", "source": "NASA PDS Geosciences", "dataset": "Full Jezero-Nili Mosaic", "resolution": "Regional", "mode": "pre-processed" }
+    }
+  }
+]
